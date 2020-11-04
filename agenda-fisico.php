@@ -374,11 +374,7 @@
 
                         <b>Website:</b> <br>
 
-                        <a
-
-                            href="https://www.intercityhoteis.com.br/hotel-pindamonhangaba/hotel-intercity-patio-pinda/34" target="_blank"
-
-                            >www.intercityhoteis.com.br/hotel-pindamonhangaba/hotel-intercity-patio-pinda/34</a>
+                        <a href="https://www.intercityhoteis.com.br/hotel-pindamonhangaba/hotel-intercity-patio-pinda/34" target="_blank">www.intercityhoteis.com.br/hotel-pindamonhangaba/hotel-intercity-patio-pinda/34</a>
 
 
 
@@ -402,11 +398,7 @@
 
                 <div class="video-youtube-1">
 
-                    <iframe src="https://www.youtube.com/embed/ymE3EwgW3mA" frameborder="0"
-
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-
-                        allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/ymE3EwgW3mA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
 
@@ -414,11 +406,7 @@
 
                 <div class="video-youtube-2">
 
-                    <iframe src="https://www.youtube.com/embed/xpA-sJ9HtXA" frameborder="0"
-
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-
-                        allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/xpA-sJ9HtXA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
 
@@ -430,9 +418,7 @@
 
                 <div class="botao-whatsapp">
 
-                    <a href="#" class="whatsapp-link"><object data="imagens/icone-whatsapp.svg"
-
-                            type="image/svg+xml"></object> Whatsapp </a>
+                    <a href="#" class="whatsapp-link"><object data="imagens/icone-whatsapp.svg" type="image/svg+xml"></object> Whatsapp </a>
 
                 </div>
 
@@ -442,9 +428,7 @@
 
 
 
-                    <a href="#" class="contato-link-icone"><object data="imagens/icone-contato.svg"
-
-                            type="image/svg+xml"></object> Contato</a>
+                    <a href="#" class="contato-link-icone"><object data="imagens/icone-contato.svg" type="image/svg+xml"></object> Contato</a>
 
                 </div>
 
@@ -526,21 +510,21 @@
 
                     <p>
 
-                    <ul>
+                        <ul>
 
-                        <li>&#62; <a href="consultoria.html">Consultoria</a></li>
+                            <li>&#62; <a href="consultoria.html">Consultoria</a></li>
 
-                        <li>&#62; <a href="resultados.html">Resultados</a></li>
+                            <li>&#62; <a href="resultados.html">Resultados</a></li>
 
-                        <li>&#62; <a href="para-empresas.html">Qualificações in Company</a></li>
+                            <li>&#62; <a href="para-empresas.html">Qualificações in Company</a></li>
 
-                        <li>&#62; <a href="qualificacoes-abertas.html">Qualificações Abertas</a></li>
+                            <li>&#62; <a href="qualificacoes-abertas.html">Qualificações Abertas</a></li>
 
-                        <li>&#62; <a href="cursos-rapidos.html">Cursos Rápidos</a></li>
+                            <li>&#62; <a href="cursos-rapidos.html">Cursos Rápidos</a></li>
 
-                        <li>&#62; <a href="responsabilidade-social.html">Responsabilidade Social</a></li>
+                            <li>&#62; <a href="responsabilidade-social.html">Responsabilidade Social</a></li>
 
-                    </ul>
+                        </ul>
 
                     </p>
 
@@ -552,33 +536,25 @@
 
                             <td>
 
-                                <a href="https://www.linkedin.com/company/vfconsultoria/" target="_blank"><img
-
-                                        src="imagens/linkedin.png"></a>
+                                <a href="https://www.linkedin.com/company/vfconsultoria/" target="_blank"><img src="imagens/linkedin.png"></a>
 
                             </td>
 
                             <td>
 
-                                <a href="https://www.youtube.com/channel/UCCDpG-akUomioOs_s0_co1A" target="_blank"><img
-
-                                        src="imagens/youtube.png"></a>
+                                <a href="https://www.youtube.com/channel/UCCDpG-akUomioOs_s0_co1A" target="_blank"><img src="imagens/youtube.png"></a>
 
                             </td>
 
                             <td>
 
-                                <a href="https://www.facebook.com/vfconsultoria" target="_blank"><img
-
-                                        src="imagens/facebook.png"></a>
+                                <a href="https://www.facebook.com/vfconsultoria" target="_blank"><img src="imagens/facebook.png"></a>
 
                             </td>
 
                             <td>
 
-                                <a href="https://www.instagram.com/vf_consultoria/" target="_blank"><img
-
-                                        src="imagens/instagram.png"></a>
+                                <a href="https://www.instagram.com/vf_consultoria/" target="_blank"><img src="imagens/instagram.png"></a>
 
                             </td>
 
