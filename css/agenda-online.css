@@ -1,0 +1,1973 @@
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+
+@font-face {
+
+    font-family: RalewaySemiBold;
+
+    src: url(../fontes/Raleway-SemiBold.ttf);
+
+}
+
+
+
+@font-face {
+
+    font-family: RalewayBold;
+
+    src: url(../fontes/Raleway-Bold.ttf);
+
+}
+
+
+
+@font-face {
+
+    font-family: RalewayRegular;
+
+    src: url(../fontes/Raleway-Regular.ttf);
+
+}
+
+
+
+@font-face {
+
+    font-family: RalewayItalic;
+
+    src: url(../fontes/Raleway-Italic.ttf);
+
+}
+
+
+
+b {
+
+    font-family: RalewayBold;
+
+}
+
+
+
+.recipiente {
+
+    width: 100%;
+
+    max-width: 1366px;
+
+    margin: auto;
+
+}
+
+
+
+.topo {
+
+    width: 100%;
+
+    min-height: 115px;
+
+    background-color: #020031;
+
+    line-height: 115px;
+
+}
+
+
+
+.logo {
+
+    margin-top: 18px;
+
+    margin-left: 70px;
+
+    float: left;
+
+}
+
+
+
+.menu {
+
+    float: right;
+
+    margin: 0;
+
+    padding: 0;
+
+    margin-right: 70px;
+
+}
+
+
+
+.menu ul {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.menu ul li {
+
+    display: inline;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(-n+6)
+
+/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+
+
+    {
+
+    margin-right: 43px;
+
+}
+
+
+
+.menu ul li a {
+
+    color: #FFF;
+
+    font-family: RalewaySemiBold;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(6) a
+
+/* Selecionar apenas o elemento de número 4, no caso, "Para profissionais" */
+
+
+
+    {
+
+    color: #49af67;
+
+    padding-left: 15px;
+
+    background-image: url(../imagens/seta-menu-ativo.png);
+
+    background-repeat: no-repeat;
+
+    cursor: default;
+
+}
+
+
+
+.menu-icone {
+
+    display: none;
+
+    font-size: 24px;
+
+    float: right;
+
+    margin-right: 30px;
+
+    margin-top: 40px;
+
+}
+
+
+
+.menu-icone a {
+
+    color: white;
+
+}
+
+
+
+.fundo-banner
+
+/* Criação da DIV englobando o banner e conteúdo para atender o que foi desenvolvido pelo o designer */
+
+
+
+    {
+
+    background-image: url('../imagens/banner.png'), linear-gradient(#000027, #020a3a);
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+.banner {
+
+    width: 100%;
+
+    min-height: 2380px;
+
+    padding: 0;
+
+    margin: 0;
+
+    text-align: center;
+
+}
+
+
+
+.banner h1 {
+
+    font-family: RalewayBold;
+
+    font-size: 60px;
+
+    color: white;
+
+    padding: 0;
+
+    margin: 0;
+
+    padding-top: 100px;
+
+}
+
+
+
+.banner h3 {
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    padding: 0;
+
+    margin: 0;
+
+    padding-top: 20px;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+.agenda {
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    margin: auto;
+
+    border: 2px solid #49ae6c;
+
+    border-radius: 8px;
+
+    min-height: 720px;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+.agenda-online {
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    margin: auto;
+
+    border: 2px solid #49ae6c;
+
+    border-radius: 8px;
+
+    min-height: 480px;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+.imagem-destaque {
+
+    text-align: left;
+
+    width: 100%;
+
+    border-radius: 6px;
+
+    max-width: 1190px;
+
+}
+
+
+
+.imagem-destaque img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 6px;
+
+}
+
+
+
+.texto-destaque {
+
+    color: #4cb06a;
+
+    max-width: 1000px;
+
+    width: 100%;
+
+    font-size: 18px;
+
+    font-family: RalewaySemiBold;
+
+    box-sizing: border-box;
+
+    padding-top: 20px;
+
+    margin: auto;
+
+}
+
+
+
+.titulo-evento {
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    padding-left: 10px;
+
+}
+
+
+
+.data-evento {
+
+    float: right;
+
+    text-align: right;
+
+}
+
+
+
+.divisoria-agenda {
+
+    width: 100%;
+
+    clear: both;
+
+    margin: auto;
+
+    opacity: 50%;
+
+}
+
+
+
+.descricao-destaque {
+
+    width: 50%;
+
+    float: left;
+
+    color: white;
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    padding-left: 10px;
+
+    padding-right: 20px;
+
+    letter-spacing: 0.5px;
+
+    line-height: 25px;
+
+    font-family: RalewayRegular;
+
+    font-size: 17px;
+
+}
+
+
+
+.nome-facilitador {
+
+    width: 50%;
+
+    float: left;
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    padding-left: 10px;
+
+    padding-right: 20px;
+
+    padding-top: 20px;
+
+    letter-spacing: 0.5px;
+
+    line-height: 25px;
+
+    font-family: RalewayRegular;
+
+    font-size: 17px;
+
+    padding-bottom: 20px;
+
+}
+
+
+
+.nome-facilitador span {
+
+    color: white;
+
+}
+
+
+
+.nome-facilitador object {
+
+    padding-top: 10px;
+
+}
+
+
+
+.descricao-facilitador {
+
+    width: 50%;
+
+    float: left;
+
+    color: white;
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    padding-left: 10px;
+
+    padding-right: 20px;
+
+    padding-top: 20px;
+
+    letter-spacing: 0.5px;
+
+    line-height: 25px;
+
+    font-family: RalewayRegular;
+
+    font-size: 17px;
+
+}
+
+
+
+.detalhes-local {
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    margin: auto;
+
+}
+
+
+
+.detalhes {
+
+    width: 45%;
+
+    float: left;
+
+    border: 2px solid #49ae6c;
+
+    border-radius: 8px;
+
+    min-height: 230px;
+
+    margin-right: 10%;
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+}
+
+
+
+.detalhes span {
+
+    font-size: 16px;
+
+    font-family: RalewayBold;
+
+    color: #49ae6c;
+
+}
+
+
+
+.detalhes p {
+
+    font-size: 16px;
+
+    font-family: RalewayRegular;
+
+    color: white;
+
+}
+
+
+
+.local {
+
+    width: 45%;
+
+    float: left;
+
+    border: 2px solid #49ae6c;
+
+    border-radius: 8px;
+
+    min-height: 230px;
+
+    /* margin-left: 75px; */
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    line-height: 25px;
+
+}
+
+
+
+.local span {
+
+    font-size: 16px;
+
+    font-family: RalewayBold;
+
+    color: #49ae6c;
+
+}
+
+
+
+.local p {
+
+    font-size: 16px;
+
+    font-family: RalewayRegular;
+
+    color: white;
+
+}
+
+
+
+.local p span {
+
+    font-family: RalewayRegular;
+
+    color: #49ae6c;
+
+}
+
+
+
+.local .verde {
+
+    color: #49ae6c;
+
+    font-family: RalewayRegular;
+
+}
+
+
+
+.local .direito {
+
+    float: right;
+
+    color: white;
+
+}
+
+
+
+.local p object {
+
+    float: right;
+
+}
+
+
+
+.depoimentos {
+
+    clear: both;
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    padding-top: 50px;
+
+    margin: auto;
+
+}
+
+
+
+.depoimento-texto {
+
+    color: white;
+
+    font-size: 18px;
+
+    font-family: RalewayRegular;
+
+}
+
+
+
+.depoimentos iframe {
+
+    max-width: 420px;
+
+    width: 100%;
+
+    min-height: 230px;
+
+    height: 100%;
+
+}
+
+
+
+.video-youtube-1 {
+
+    float: left;
+
+    max-width: 50%;
+
+    width: 100%;
+
+    max-height: 300px;
+
+    height: 100%;
+
+    margin: 0;
+
+}
+
+
+
+.video-youtube-2 {
+
+    float: left;
+
+    max-width: 50%;
+
+    width: 100%;
+
+    max-height: 300px;
+
+    height: 100%;
+
+}
+
+
+
+.botoes-contato {
+
+    clear: both;
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    padding-top: 50px;
+
+    margin: auto;
+
+}
+
+
+
+.botao-whatsapp {
+
+    width: 50%;
+
+    float: left;
+
+    box-sizing: border-box;
+
+    padding-left: 28%;
+
+}
+
+
+
+.botao-contato {
+
+    width: 50%;
+
+    float: right;
+
+    box-sizing: border-box;
+
+    padding-left: 5%;
+
+}
+
+
+
+.whatsapp-link {
+
+    display: block;
+
+    width: 200px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    text-align: center;
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #4cb06a;
+
+    border-radius: 10px;
+
+}
+
+
+
+.contato-link-icone {
+
+    display: block;
+
+    width: 200px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    text-align: center;
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #4cb06a;
+
+    border-radius: 10px;
+
+}
+
+
+
+.whatsapp-link object
+
+{
+
+    vertical-align: sub;
+
+}
+
+.contato-link-icone object
+
+{
+
+    vertical-align: middle;
+
+}
+
+
+
+.rodape {
+
+    width: 100%;
+
+    min-height: 630px;
+
+    background-image: url("../imagens/textura.png"), linear-gradient(#020a3a, #037a9a);
+
+    /* W3C */
+
+}
+
+
+
+.rodape-escuro {
+
+    width: 100%;
+
+    min-height: 75px;
+
+    background-color: #100f39;
+
+}
+
+
+
+.contato-geral {
+
+    max-width: 860px;
+
+    min-height: 300px;
+
+    margin: auto;
+
+    padding-top: 50px;
+
+}
+
+
+
+.contato-icone {
+
+    float: left;
+
+    margin-left: 20px;
+
+}
+
+
+
+.contato-texto-icone {
+
+    float: left;
+
+    margin-left: 170px;
+
+    padding-top: 50px;
+
+}
+
+
+
+.contato-texto {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    font-family: RalewayBold;
+
+    font-size: 20px;
+
+    color: white;
+
+}
+
+
+
+.contato-link {
+
+    display: block;
+
+    width: 200px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    text-align: center;
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #4cb06a;
+
+    border-radius: 10px;
+
+    margin-top: 40px;
+
+}
+
+
+
+.divisoria {
+
+    clear: both;
+
+    margin: auto;
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+}
+
+
+
+.divisoria hr {
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+
+.rodape-recipiente {
+
+    margin: auto;
+
+    width: 100%;
+
+    max-width: 1190px;
+
+    height: auto;
+
+    margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-institucional {
+
+    float: left;
+
+    width: 33.3%;
+
+    min-height: 350px;
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+
+    padding-right: 100px;
+
+    font-family: RalewayRegular;
+
+    font-size: 16px;
+
+    line-height: 30px;
+
+    color: white;
+
+}
+
+
+
+.rodape-parte-links {
+
+    float: left;
+
+    width: 33.3%;
+
+    min-height: 350px;
+
+}
+
+
+
+.rodape-parte-contato {
+
+    float: left;
+
+    width: 33.4%;
+
+    min-height: 350px;
+
+}
+
+
+
+.conheca-a-vf-link {
+
+    display: block;
+
+    width: 200px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    text-align: center;
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #FFF;
+
+    border-radius: 10px;
+
+    margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-links h3 {
+
+    font-family: RalewayBold;
+
+    font-size: 18px;
+
+    color: #49ae6c;
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-links ul {
+
+    font-family: RalewayItalic;
+
+    font-size: 18px;
+
+    color: #49ae6c;
+
+    list-style: none;
+
+    line-height: 50px;
+
+    padding: 0;
+
+    padding-left: 20px;
+
+    padding-top: 25px;
+
+}
+
+
+
+.rodape-parte-links a {
+
+    font-family: RalewayItalic;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+
+.rodape-parte-links table {
+
+    margin-top: 25px;
+
+    margin-left: 20px;
+
+}
+
+
+
+.como-chegar-link {
+
+    display: block;
+
+    width: 200px;
+
+    height: 65px;
+
+    line-height: 65px;
+
+    text-align: center;
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #FFF;
+
+    border-radius: 10px;
+
+    margin-top: 44px;
+
+    margin-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato h3 {
+
+    font-family: RalewayBold;
+
+    font-size: 18px;
+
+    color: #49ae6c;
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato p {
+
+    font-family: RalewayRegular;
+
+    font-size: 18px;
+
+    color: white;
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+
+    padding-top: 35px;
+
+    line-height: 23px;
+
+}
+
+
+
+.rodape-escuro span {
+
+    float: left;
+
+    padding-left: 20px;
+
+    font-family: Verdana;
+
+    color: white;
+
+    font-size: 12px;
+
+    padding-top: 30px;
+
+}
+
+
+
+.rodape-escuro a {
+
+    float: right;
+
+    padding-right: 20px;
+
+    padding-top: 20px;
+
+}
+
+
+
+@media screen and (max-width: 1280px) {
+
+    /* diminuindo fonte do menu */
+
+    .menu ul li a {
+
+        font-size: 14px;
+
+    }
+
+    /* diminuindo espaçamento lateral esquerdo */
+
+    .logo {
+
+        margin-left: 30px;
+
+    }
+
+    /* diminuindo espaçamento lateral direito */
+
+    .menu {
+
+        margin-right: 30px;
+
+    }
+
+    /* diminuindo espaçamento entre os itens do menu */
+
+    .menu ul li:nth-child(-n+6)/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+        {
+
+        margin-right: 35px;
+
+    }
+
+    .contato, .banner {
+
+        box-sizing: border-box;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+    aside {
+
+        box-sizing: border-box;
+
+        padding: 10px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 1152px) {
+
+    /* diminuindo fonte do menu */
+
+    .menu ul li a {
+
+        font-size: 12px;
+
+    }
+
+    .rodape {
+
+        min-height: 987px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .menu {
+
+        display: none;
+
+        float: none;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin: 0;
+
+        padding: 0;
+
+        margin-right: 70px;
+
+        padding-top: 115px;
+
+        padding-bottom: 30px;
+
+    }
+
+    .menu ul li {
+
+        display: block;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    .menu-icone {
+
+        display: block;
+
+    }
+
+    .topo {
+
+        line-height: 40px;
+
+    }
+
+    /* aumentando fonte do menu */
+
+    .menu ul li a {
+
+        font-size: 16px;
+
+    }
+
+    /* zerando esse item por ter sido atribuido no media 1280 */
+
+    .menu ul li:nth-child(-n+6)/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+        {
+
+        margin-right: 0px;
+
+    }
+
+    .banner-descricao {
+
+        font-size: 14px;
+
+    }
+
+    .banner-texto {
+
+        font-size: 16px;
+
+        box-sizing: border-box;
+
+        padding-left: 20px;
+
+    }
+
+    .descricao-facilitador {
+
+        padding-right: 0;
+
+        font-size: 15px;
+
+        padding-left: 0px;
+
+    }
+
+    .detalhes, .local {
+
+        width: 45%;
+
+        height: 243px;
+
+    }
+
+    .detalhes {
+
+        margin-right: 10%;
+
+    }
+
+    .rodape-parte-institucional {
+
+        float: none;
+
+        display: block;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        padding-right: 0;
+
+        padding-left: 0;
+
+        padding-top: 30px;
+
+    }
+
+    .rodape-parte-links {
+
+        float: none;
+
+        display: block;
+
+        width: 100%;
+
+        height: auto;
+
+        text-align: center;
+
+    }
+
+    .rodape-parte-contato {
+
+        float: none;
+
+        display: block;
+
+        width: 100%;
+
+        height: auto;
+
+        padding-bottom: 50px;
+
+    }
+
+    .logo-rodape {
+
+        display: block;
+
+        margin: auto;
+
+    }
+
+    .rodape-parte-institucional p {
+
+        text-align: justify;
+
+        padding-left: 50px;
+
+        padding-right: 50px;
+
+    }
+
+    .conheca-a-vf-link {
+
+        display: block;
+
+        margin: auto;
+
+        margin-top: 40px;
+
+    }
+
+    .rodape-parte-links h3 {
+
+        display: block;
+
+        text-align: center;
+
+        margin-top: 80px;
+
+        font-size: 24px;
+
+        padding-left: 0;
+
+    }
+
+    .rodape-parte-links ul {
+
+        display: block;
+
+        margin: auto;
+
+        padding-left: 0;
+
+    }
+
+    .rodape-parte-links table {
+
+        display: block;
+
+        margin: auto;
+
+        width: 230px;
+
+    }
+
+    .rodape-parte-contato h3 {
+
+        display: block;
+
+        text-align: center;
+
+        margin-top: 80px;
+
+        font-size: 24px;
+
+        padding-left: 0;
+
+    }
+
+    .rodape-parte-contato p {
+
+        text-align: center;
+
+        padding-left: 0;
+
+    }
+
+    .como-chegar-link {
+
+        margin: auto;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .banner {
+
+        padding-bottom: 100px;
+
+    }
+
+    .imagem-destaque {
+
+        margin-right: 0px;
+
+    }
+
+    .detalhes, .local {
+
+        float: none;
+
+        display: block;
+
+        margin: auto;
+
+        width: 80%;
+
+        margin-bottom: 10px;
+
+    }
+
+    .video-youtube-1, .video-youtube-2 {
+
+        display: block;
+
+        float: none;
+
+        max-width: 80%;
+
+        width: 100%;
+
+        margin: auto;
+
+        margin-top: 30px;
+
+    }
+
+    .botao-whatsapp {
+
+        padding-left: 20%;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .banner {
+
+        padding-bottom: 40px;
+
+    }
+
+    .banner h1 {
+
+        font-size: 40px;
+
+        box-sizing: border-box;
+
+        padding: 50px;
+
+        padding-bottom: 0;
+
+        padding-top: 150px;
+
+    }
+
+    .banner h2 {
+
+        font-size: 24px;
+
+        box-sizing: border-box;
+
+        padding: 50px;
+
+        padding-bottom: 0;
+
+        padding-top: 20px;
+
+    }
+
+    .banner-descricao {
+
+        width: 400px;
+
+        height: auto;
+
+    }
+
+    .banner-descricao p {
+
+        display: block;
+
+        width: auto;
+
+    }
+
+    .agenda {
+
+        height: 750px;
+
+        box-sizing: border-box;
+
+        padding-right: 0px;
+
+    }
+
+
+
+    .agenda-online
+
+    {
+
+        box-sizing: border-box;
+
+        padding-right: 10px;
+
+    }
+
+    .nome-facilitador, .descricao-facilitador {
+
+        width: 100%;
+
+        display: block;
+
+        float: none;
+
+        text-align: center;
+
+    }
+
+    .texto-destaque {
+
+        max-width: 100%;
+
+        width: 100%;
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+        font-size: 16px;
+
+    }
+
+    .descricao-destaque {
+
+        float: none;
+
+        display: block;
+
+        width: 100%;
+
+        padding-right: 0;
+
+    }
+
+    .botao-whatsapp, .botao-contato {
+
+        margin: auto;
+
+        margin-top: 20px;
+
+        float: none;
+
+        width: 30%;
+
+        padding: 0;
+
+    }
+
+    .divisoria {
+
+        padding-top: 30px;
+
+    }
+
+    .imagem-destaque {
+
+        padding-right: 0;
+
+    }
+
+    .saiba-mais-link {
+
+        margin: 0;
+
+        margin: auto;
+
+        margin-top: 35px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .agenda {
+
+        height: 820px;
+
+    }
+
+    .texto-destaque {
+
+        font-size: 16px;
+
+    }
+
+    .detalhes, .local {
+
+        width: 101%;
+
+    }
+
+    .local span, .local p {
+
+        font-size: 14px;
+
+    }
+
+    .botao-whatsapp, .botao-contato {
+
+        width: 100%;
+
+        padding-left: 25%;
+
+    }
+
+    .rodape-escuro {
+
+        text-align: center;
+
+    }
+
+    .rodape-escuro span {
+
+        float: none;
+
+        display: block;
+
+        padding-right: 20px;
+
+    }
+
+    .rodape-escuro a {
+
+        float: none;
+
+        display: block;
+
+        padding-bottom: 20px;
+
+        padding-right: 0;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+    .banner h1 {
+
+        padding-top: 90px;
+
+    }
+
+    .banner-descricao {
+
+        width: 90%;
+
+    }
+
+    .descricao-destaque {
+
+        font-size: 14px;
+
+    }
+
+    .imagem-destaque {
+
+        padding-right: 0;
+
+    }
+
+    .imagem-destaque object {
+
+        width: 103.2%;
+
+    }
+
+    .nome-facilitador, .descricao-facilitador {
+
+        font-size: 14px;
+
+    }
+
+    .botao-whatsapp, .botao-contato {
+
+        padding-left: 20%;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .banner-descricao {
+
+        font-size: 14px;
+
+    }
+
+    .banner-texto {
+
+        width: 300px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .imagem-destaque object {
+
+        width: 104%;
+
+    }
+
+    .titulo-evento {
+
+        text-align: center;
+
+        padding: 0;
+
+    }
+
+    .local span, .local p, .detalhes span, .detalhes p {
+
+        font-size: 14px;
+
+    }
+
+    .botao-whatsapp, .botao-contato {
+
+        padding-left: 20%;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+    .banner-texto {
+
+        width: 250px;
+
+        font-size: 12px;
+
+    }
+
+    .logo {
+
+        width: 160px;
+
+    }
+
+    .banner-descricao select {
+
+        font-size: 14px;
+
+    }
+
+    .agenda {
+
+        height: 980px;
+
+    }
+
+    .botao-whatsapp, .botao-contato {
+
+        padding-left:10%;
+
+    }
+
+}

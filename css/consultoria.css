@@ -1,0 +1,1551 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	/*overflow: hidden;*/
+}
+
+
+/*Fontes */
+@font-face 
+{
+	font-family: RalewaySemiBold;
+	src: url(../fontes/Raleway-SemiBold.ttf);
+}
+
+@font-face 
+{
+	font-family: RalewayBold;
+	src: url(../fontes/Raleway-Bold.ttf);
+}
+
+@font-face 
+{
+	font-family: RalewayRegular;
+	src: url(../fontes/Raleway-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: RalewayItalic;
+	src: url(../fontes/Raleway-Italic.ttf);
+}
+/*Fontes */
+
+
+
+/*Pop-up*/
+#sobreposicao
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 10;
+	display: inline-block;
+}
+
+#modal
+{
+	position: absolute;
+	width: 100%;
+	max-width: 800px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 15;
+	box-sizing: border-box;
+	padding: 20px;
+	display: inline-block;
+}
+
+#caixa-mensagem
+{
+	width: 100%;
+	height: 190px;
+	background-color: #FFF;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 20px;
+	background: #11103c;
+	border-radius: 20px;
+	border: 1px solid #4cb06a;
+}
+
+
+#caixa-mensagem-titulo
+
+{
+	font-family: RalewayBold;
+	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#caixa-mensagem-descricao
+{
+
+	font-family: RalewayRegular;
+	font-size: 16px;
+	color: #ffffff;
+	margin-top: 20px;
+	text-align: center;
+
+}
+
+#caixa-mensagem-fechar
+{
+	position: absolute;
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+	background-image: linear-gradient(to bottom, #49ae6c , #087e97); 
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+}
+/*Pop-up*/
+
+.recipiente
+{
+	width: 100%;
+	max-width: 1366px;
+	margin: auto;
+}
+
+
+/*Começo do menu*/
+.topo
+{
+	width: 100%;
+	min-height: 115px;
+	background-color: #020031;
+	line-height: 115px;
+}
+
+.logo
+{
+	margin-top: 18px;
+	margin-left: 70px;
+	float: left;
+}
+
+.menu
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 70px;
+}
+
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+{
+	margin-right: 43px;
+}
+
+.menu ul li a
+{
+	color: #FFF;
+	font-family: RalewaySemiBold;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li:nth-child(3) a /* Selecionar apenas o elemento de número 4, no caso, "Para empresas" */
+{
+	color: #49af67;
+	padding-left: 15px;
+	background-image: url(../imagens/seta-menu-ativo.png);
+	background-repeat: no-repeat;
+	cursor: default;
+}
+
+.menu-icone
+{
+	display: none;
+	font-size: 24px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 40px;
+}
+
+.menu-icone a
+{
+	color: white;
+}
+/*Fim do menu*/
+
+
+.fundo-banner
+{
+	background-image: url('../imagens/banner.png'), linear-gradient(#02012a, #02012a);
+	background-repeat: no-repeat;
+}
+
+
+/*Começo do banner*/
+.banner
+{
+	width: 100%;
+	min-height: 742px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.banner h1
+{
+	font-family: RalewayBold;
+	font-size: 70px;
+	color: white;
+	padding: 0;
+	margin: 0;
+	padding-top: 150px;
+}
+
+.banner h2
+{
+	font-family: RalewaySemiBold;
+	font-size: 36px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.banner-descricao
+{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	font-family: RalewayRegular;
+	line-height: 22px;
+	font-size: 18px;
+	color: white;
+	padding-top: 30px;
+}
+
+.banner-icone-texto
+{
+	margin: auto;
+	width: 100%;
+	max-width: 520px;
+	height: auto;
+	padding-top: 30px;
+}
+
+
+.banner-icone
+{
+	float: left;
+}
+
+.banner-texto
+{
+	float: right;
+	width: 100%;
+	max-width: 380px;
+	height: auto;
+	font-family: RalewaySemiBold;
+	font-size: 22px;
+	text-align: left;
+	color: white;
+	padding-top: 20px;
+}
+
+
+.experiencia
+{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.experiencia h2
+{
+	font-family: RalewaySemiBold;
+	font-size: 36px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+
+
+.metodologia 
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.metodologia h2
+{
+	font-family: RalewaySemiBold;
+	font-size: 36px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+
+.metodologia-descricao
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+	font-family: RalewayRegular;
+	line-height: 22px;
+	font-size: 18px;
+	color: white;
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+.experiencia-descricao
+{
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+	font-family: RalewayRegular;
+	line-height: 22px;
+	font-size: 18px;
+	color: white;
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+.celula_total
+{
+	max-width: 1190px;
+	margin: auto;
+}
+
+.celula_metade
+{
+	float: left;
+	width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+#espacamento_carrosel
+{
+	padding-top: 50px;
+}
+
+.celula_carrossel
+{
+	/*height: 350px;*/
+}
+
+.borda_carrossel
+{
+	border-left:1px solid #2b3d61;
+}
+
+.alinhamento_botao_faixa
+{
+    display: block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+
+#float_direita
+{
+	float: right;
+}
+/*Codigo modificado*/
+
+.cartao-icone-texto
+{
+	margin: auto;
+	width: 100%;
+	max-width: 510px;
+	height: auto;
+	padding-top: 60px;
+}
+
+.cartao-icone-texto p
+{
+	text-align: center;
+    width: 100%;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    padding-top: 15PX;
+}
+
+
+.centralizar_vertical
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao
+{
+    display: inline-block;
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+
+.borda_direita_cartao
+{
+    border-left: 1px dotted #4f4f69;
+}
+
+
+.carrossel
+{
+	display: inline-block;
+	/*width: 49%;*/
+	/*width: 50%;*/
+	min-width: 500px;
+	text-align: center;
+}
+
+#carrossel_total
+{
+	display: inline-block;
+	/*width: 100%;*/
+	text-align: center;
+}
+
+.carrossel  h1
+{
+	font-family: RalewayItalic;
+	color: #26ae4e;
+	font-size: 27px;
+}
+
+
+.carrossel span
+{
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 15px;
+
+}
+
+.carrossel p
+{
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 19px;
+	max-width: 500px;
+	margin: auto;
+	padding-top: 25px;
+
+}
+
+
+.carrossel h2
+{
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 18px;
+}
+
+
+.carrossel h3
+{
+	font-family: RalewayItalic;
+	color: #26ae4e;
+	font-size: 19px;
+	margin-top: 40px;
+}
+
+
+.imagem_cartao
+{
+	padding: 15px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.borda_titulo_cartao
+{
+	color: white;
+	border: 2px solid #4cb06a;
+	border-radius: 20px;
+	width: 230px;
+	margin: auto;
+}
+
+
+.cartao_descricao p
+{
+	font-family: RalewayRegular;
+	color: white;
+	font-size: 16px;
+	min-height: 136px;
+}
+
+.borda_titulo_cartao p
+{
+	font-size: 20px;
+	font-family: RalewaySemiBold;
+
+}
+
+.botao_cartao
+{
+	padding: 5px;
+	background-image: linear-gradient(#47ac6d, #0a7f95);
+	border-radius: 5px;
+	width: 100px;
+	color: white;
+	margin-top: 30px;
+}
+
+.botao_cartao p
+{
+	font-family: RalewayRegular;
+
+}
+
+.cor_linha
+{
+	border-color:  #4e4d6c;
+	margin-top: 30px;
+}
+
+
+
+.faixa
+{
+	 background-image: linear-gradient(to bottom, #018e68 , #017c6e);
+	 padding: 0 30px;
+	 padding-bottom: 0;
+	 margin-top: 30px;
+}
+
+
+.faixa p
+{
+	font-family: RalewayBold;
+	text-align: right;
+	color: white;
+	font-size: 20px;
+}
+
+
+b
+{
+	font-family: RalewayBold;
+}
+
+
+.cartao-texto
+{
+	box-sizing: border-box;
+	padding-bottom: 0;
+	padding-top: 20px;
+	font-family: RalewaySemiBold;
+}
+
+
+.botao_arredondado_verde
+ {
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #4cb06a;
+    max-width: 340px;
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+.imagem-responsiva
+{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+/*Começo do rodape*/
+.rodape
+{
+	width: 100%;
+	min-height: 675px;
+	background-image: url("../imagens/textura.png"), linear-gradient(#02012a, #037a9a); /* W3C */
+}
+
+.rodape-escuro
+{
+	width: 100%;
+	min-height: 75px;
+	background-color: #100f39;
+}
+
+
+.divisoria
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1190px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.rodape-recipiente
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1190px;
+	height: auto;
+	margin-top: 40px;
+}
+
+.rodape-parte-institucional
+{
+	float: left;
+	width: 33.3%;
+	min-height: 350px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 100px;
+	font-family: RalewayRegular;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+}
+
+.rodape-parte-links
+{
+	float: left;
+	width: 33.3%;
+	min-height: 350px;
+}
+
+.rodape-parte-contato
+{
+	float: left;
+	width: 33.4%;
+	min-height: 350px;
+}
+
+
+.conheca-a-vf-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.rodape-parte-links h3
+{
+	font-family: RalewayBold;
+	font-size: 18px;
+	color: #49ae6c;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.rodape-parte-links ul
+{
+	font-family: RalewayItalic;
+	font-size: 18px;
+	color: #49ae6c;
+	list-style: none;
+	line-height: 50px;
+	padding: 0;
+	padding-left: 20px;
+	padding-top: 25px;
+}
+
+.rodape-parte-links a
+{
+	font-family: RalewayItalic;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.rodape-parte-links table
+{
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.como-chegar-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	margin-top: 44px;
+	margin-left: 20px;
+}
+
+.rodape-parte-contato h3
+{
+	font-family: RalewayBold;
+	font-size: 18px;
+	color: #49ae6c;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.rodape-parte-contato p
+{
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-top: 35px;
+	line-height: 23px;
+}
+
+.rodape-escuro span
+{
+	float: left;
+	padding-left: 20px;
+	font-family: Verdana;
+	color: white;
+	font-size: 12px;
+	padding-top: 30px;
+}
+
+.rodape-escuro a
+{
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+/*Fim do rodape*/
+
+
+/*Setas do carrossel*/
+.seta_direita
+{
+	color: white;
+	position: absolute;
+	top:30%;
+	padding: 10px;
+	right: 1%;
+}
+
+.seta_esquerda
+{
+	color: white;
+	position: absolute;
+	top:30%;
+	padding: 10px;
+	left: 1%;
+}
+/*Setas do carrossel*/
+
+
+@media screen and (max-width: 1280px) 
+{
+	/* diminuindo fonte do menu */
+	.menu ul li a
+	{
+		font-size: 14px;
+	}
+
+	/* diminuindo espaçamento lateral esquerdo */
+	.logo
+	{
+		margin-left: 30px;
+	}
+
+	/* diminuindo espaçamento lateral direito */
+	.menu
+	{
+		margin-right: 30px;
+	}
+
+	/* diminuindo espaçamento entre os itens do menu */
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+	{
+		margin-right: 35px;
+	}
+
+	.carrossel p 
+	{
+	    font-size: 17px;
+	     max-width: 408px;
+	}
+}
+
+@media screen and (max-width: 1152px) 
+{
+	/* diminuindo fonte do menu */
+	.menu ul li a
+	{
+		font-size: 12px;
+	}
+
+	.rodape
+	{
+		min-height: 714px;
+	}
+
+
+	.seta_esquerda 
+	{
+    	position: static;
+    }
+
+    .seta_direita 
+	{
+    	position: static;
+    }
+
+	.seta_esquerda 
+	{
+    	display: none;
+    }
+
+    .seta_direita 
+	{
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) 
+{
+	.menu
+	{
+		display: none;
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		margin-right: 70px;
+		padding-top: 115px;
+		padding-bottom: 30px;
+	}
+
+	.menu ul li
+	{
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu-icone
+	{
+		display: block;
+	}
+
+	.topo
+	{
+		line-height: 40px;
+	}
+
+	/* aumentando fonte do menu */
+	.menu ul li a
+	{
+		font-size: 16px;
+	}
+
+	/* zerando esse item por ter sido atribuido no media 1280 */
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+	{
+		margin-right: 0px;
+	}
+
+	.banner-icone-texto
+	{
+		width: 580px;
+		box-sizing: border-box;
+	}
+
+	.cartao-texto 
+	{
+	    font-size: 18px;
+	}
+	
+	.botao_arredondado_verde 
+	{
+		max-width: 295px;
+		font-size: 15px
+	}
+
+	.rodape-parte-institucional
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 0;
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 30px;
+	}
+
+	.rodape-parte-links
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.rodape-parte-contato
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-bottom: 50px;
+	}
+
+	.logo-rodape
+	{
+		display: block;
+		margin: auto;
+	}
+
+	.rodape-parte-institucional p
+	{
+		text-align: justify;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.conheca-a-vf-link 
+	{
+	    display: block;
+	    margin: auto;
+	    margin-top: 40px;
+	}
+
+	.rodape-parte-links h3
+	{
+		display: block;
+		text-align: center;
+		margin-top: 80px;
+		font-size: 24px;
+		padding-left: 0;
+	}
+
+	.rodape-parte-links ul
+	{
+		display: block;
+		margin: auto;
+		padding-left: 0;
+	}
+
+	.rodape-parte-links table
+	{
+		display: block;
+		margin: auto;
+		width: 230px;
+	}
+
+	.rodape-parte-contato h3
+	{
+		display: block;
+		text-align: center;
+		margin-top: 80px;
+		font-size: 24px;
+		padding-left: 0;
+	}
+
+	.rodape-parte-contato p
+	{
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.como-chegar-link
+	{
+		margin: auto;
+	}
+
+}
+
+
+@media screen and (max-width: 992px) 
+{
+
+	.carrossel p 
+	{
+	    font-size: 16px;
+	}
+
+	.carrossel h1 
+	{
+	    font-size: 25px;
+	}
+
+	.carrossel h2 
+	{
+      	font-size: 15px;
+	}
+
+	.carrossel h3 
+	{
+    	font-size: 17px;
+	}
+
+	.metodologia 
+	{
+	    margin-top: 0px;
+	}
+
+	.banner 
+	{
+   	 min-height: 680px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) 
+{
+	.banner  h1
+	{
+		font-size: 40px;
+		box-sizing: border-box;
+		/*padding: 50px;*/
+		padding-bottom: 0;
+		padding-top: 150px;
+	}
+
+	.banner h2
+	{
+		font-size: 24px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.banner-descricao
+	{
+		font-size: 16px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.faixa
+	{
+		padding-top: 20px;
+
+	}
+
+	.metodologia  h1
+	{
+		font-size: 40px;
+		box-sizing: border-box;
+		/*padding: 50px;*/
+		padding-bottom: 0;
+		padding-top: 150px;
+	}
+
+	.metodologia h2
+	{
+		font-size: 24px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.metodologia-descricao
+	{
+		font-size: 16px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.experiencia  h1
+	{
+		font-size: 40px;
+		box-sizing: border-box;
+		/*padding: 50px;*/
+		padding-bottom: 0;
+		padding-top: 150px;
+	}
+
+	.experiencia h2
+	{
+		font-size: 24px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.experiencia-descricao
+	{
+		font-size: 16px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.contato-icone
+	{
+		float: none;
+		display: block;
+		margin: auto;
+	}
+
+	.contato-texto-icone
+	{
+		float: none;
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.contato-texto
+	{
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 50px;
+	}
+
+	.contato-link
+	{
+		margin: auto;
+	}
+
+	.divisoria
+	{
+		padding-top: 30px;
+	}
+
+	.cartao-texto 
+	{
+	    font-size: 16px;
+	}
+
+	.botao_arredondado_verde 
+	{
+		/*max-width: 295px;*/
+		font-size: 14px
+	}
+
+	.imagem-responsiva
+	{
+		width: 100px;
+	}
+
+	.celula_metade
+	{
+		float: none;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.celula_metade p
+	{
+		text-align: center;
+		padding-right: 10px;
+		padding-left: 10px;
+		box-sizing: border-box;
+	}
+
+	#float_direita
+	{
+		float: none;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.alinhamento_botao_faixa 
+	{
+	  	width: 100%;
+	    max-width: 160px;
+	    margin: auto;
+	    margin-bottom: 30px;
+	}
+
+	#margem_extra
+	{
+		margin-bottom: 20px;
+	}
+
+	.carrossel p 
+	{
+	    font-size: 14px;
+	    padding-left: 10px;
+   		padding-right: 10px;
+   		box-sizing: border-box;
+	}
+
+	.carrossel h1 
+	{
+	    font-size: 20px;
+	    padding-left: 10px;
+    	padding-right: 10px;
+    	box-sizing: border-box;
+	}
+
+	.carrossel h2 
+	{
+      	font-size: 14px;
+      	padding-left: 10px;
+    	padding-right: 10px;
+    	box-sizing: border-box;
+	}
+
+	.carrossel h3 
+	{
+    	font-size: 16px;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+
+	.rodape-escuro
+	{
+		text-align: center;
+	}
+
+	.rodape-escuro span
+	{
+		float: none;
+		display: block;
+		padding-right: 20px;
+	}
+
+	.rodape-escuro a
+	{
+		float: none;
+		display: block;
+		padding-bottom: 20px;
+		padding-right: 0;
+	}
+
+	.banner-icone
+	{
+		float: none;
+		display: block;
+		width: 100px;
+		margin: auto;
+	}
+
+	.cartao-texto
+	{
+		width: 100%;
+		max-width: none;
+	}
+
+	.banner-icone-texto
+	{
+		padding-top: 20px;
+	}
+
+	.banner-icone-texto
+	{
+		width: 100%;
+	}
+
+	.cartao-texto > p
+	{
+		display: block;
+		float: none;
+		text-align: center;
+		max-width: none;
+		margin-top: 10px;
+	}
+
+	.botao_arredondado_verde
+	{
+		max-width: none;
+		width: 300px;
+   		margin: auto;
+   		margin-top: 20px;
+	}
+
+	.banner  h1 
+	{
+    	padding-top: 90px;
+	}
+
+	.carrossel 
+	{
+	    width: 100%;
+	}
+
+	.celula_carrossel 
+	{
+    	height: auto;
+	}
+
+	.cartao-texto 
+	{
+	    font-size: 15px;
+		padding-left: 10px;
+   		padding-right: 10px;
+   		box-sizing: border-box;
+	}
+
+	.banner 
+	{
+	    min-height: 570px;
+	}
+
+	#caixa-mensagem-descricao 
+	{
+    	font-size: 15px;
+	}
+
+	.carrossel 
+	{
+   		 min-width: 100%!important;
+   		 padding-top: 40px;
+	}
+
+	.borda_direita_cartao 
+	{
+    	border-left: none;
+	}
+
+	.cartao
+	{
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 414px) 
+{
+
+	.banner  h1
+	{
+		padding-top: 80px;
+	}
+
+}
+
+@media screen and (max-width: 375px) 
+{
+
+	.botao_arredondado_verde
+	{
+		width: 200px;
+   		margin: auto;
+   		margin-top: 10px;
+	}
+
+	#caixa-mensagem 
+	{
+	    height: 220px;
+	}
+
+}
+
+@media screen and (max-width: 360px) 
+{
+	
+}
+
+@media screen and (max-width: 320px) 
+{
+	.banner-icone-texto
+	{
+		width: 320px;
+	}
+
+	.banner-texto
+	{
+		width: 140px;
+		font-size: 12px;
+	}
+
+	.cartao-texto
+	{
+		font-size: 14px;
+	}
+
+	.banner  h1 
+	{
+		font-size: 35px;
+	}
+
+	.metodologia  h1 
+	{
+		font-size: 35px;
+	}
+
+	.experiencia  h1 
+	{
+		font-size: 35px;
+	}
+
+	.imagem-responsiva 
+	{
+    	width: 90px;
+	}
+
+	#caixa-mensagem-titulo 
+	{
+   	 	font-size: 18px;
+	}
+}
+
+
+@media screen and (max-width: 280px) 
+{
+	.banner  h1 
+	{
+	    font-size: 26px;
+	    margin-top: 0;
+	    box-sizing: border-box;
+	}
+
+	.banner h2 
+	{
+	    font-size: 20px;
+	    box-sizing: border-box;
+	}
+
+	.banner-descricao 
+	{
+	    font-size: 14px;
+	    box-sizing: border-box;
+	}
+
+	.metodologia  h1 
+	{
+	    font-size: 26px;
+	    margin-top: 0;
+	    box-sizing: border-box;
+	}
+
+	.metodologia h2 
+	{
+	    font-size: 20px;
+	    box-sizing: border-box;
+	}
+
+	.metodologia-descricao 
+	{
+	    font-size: 14px;
+	    box-sizing: border-box;
+	}
+
+
+	.experiencia  h1 
+	{
+	    font-size: 26px;
+	    margin-top: 0;
+	    box-sizing: border-box;
+	}
+
+	.experiencia h2 
+	{
+	    font-size: 20px;
+	    box-sizing: border-box;
+	}
+
+	.experiencia-descricao 
+	{
+	    font-size: 14px;
+	    box-sizing: border-box;
+	}
+
+	.banner-icone-texto 
+	{
+   		 width: 264px;
+	}
+
+	.titulo_principal_beneficio 
+	{
+	    font-size: 14px;
+	    margin-top: 0px;
+	}
+
+	.logo
+	{
+		width: 150px;
+	}
+
+	#caixa-mensagem-descricao 
+	{
+    	font-size: 13px;
+	}
+}
+

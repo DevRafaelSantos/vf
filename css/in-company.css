@@ -1,0 +1,1909 @@
+body {
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+
+
+
+
+@font-face {
+
+	font-family: RalewaySemiBold;
+
+	src: url(../fontes/Raleway-SemiBold.ttf);
+
+}
+
+
+
+@font-face {
+
+	font-family: RalewayBold;
+
+	src: url(../fontes/Raleway-Bold.ttf);
+
+}
+
+
+
+@font-face {
+
+	font-family: RalewayRegular;
+
+	src: url(../fontes/Raleway-Regular.ttf);
+
+}
+
+
+
+@font-face {
+
+	font-family: RalewayItalic;
+
+	src: url(../fontes/Raleway-Italic.ttf);
+
+}
+
+
+
+.recipiente {
+
+	width: 100%;
+
+	max-width: 1366px;
+
+	margin: auto;
+
+}
+
+
+
+.topo {
+
+	width: 100%;
+
+	min-height: 115px;
+
+	background-color: #020031;
+
+	line-height: 115px;
+
+}
+
+
+
+.logo {
+
+	margin-top: 18px;
+
+	margin-left: 70px;
+
+	float: left;
+
+}
+
+
+
+.menu {
+
+	float: right;
+
+	margin: 0;
+
+	padding: 0;
+
+	margin-right: 70px;
+
+}
+
+
+
+.menu ul {
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li {
+
+	display: inline;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(-n+6)
+
+/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+
+
+	{
+
+	margin-right: 43px;
+
+}
+
+
+
+.menu ul li a {
+
+	color: #FFF;
+
+	font-family: RalewaySemiBold;
+
+	font-size: 16px;
+
+	text-decoration: none;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(3) a
+
+/* Selecionar apenas o elemento de número 4, no caso, "Para profissionais" */
+
+
+
+	{
+
+	color: #49af67;
+
+	padding-left: 15px;
+
+	background-image: url(../imagens/seta-menu-ativo.png);
+
+	background-repeat: no-repeat;
+
+	cursor: default;
+
+}
+
+
+
+.menu-icone {
+
+	display: none;
+
+	font-size: 24px;
+
+	float: right;
+
+	margin-right: 30px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.menu-icone a {
+
+	color: white;
+
+}
+
+
+
+.fundo-banner /* Criação da DIV englobando o banner e conteúdo para atender o que foi desenvolvido pelo o designer */
+
+{
+
+	background-image: url('../imagens/banner.png'), linear-gradient(#000026, #000026);
+
+	background-repeat: no-repeat;
+
+	background-position: center top;
+
+}
+
+
+
+.banner {
+
+	width: 100%;
+
+	min-height: 500px;;
+
+	padding: 0;
+
+	margin: 0;
+
+	text-align: center;
+
+}
+
+
+
+.banner h1 {
+
+	font-family: RalewayBold;
+
+	font-size: 60px;
+
+	color: white;
+
+	padding: 0;
+
+	margin: 0;
+
+	padding-top: 100px;
+
+}
+
+
+
+.banner h2 {
+
+	font-family: RalewaySemiBold;
+
+	font-size: 36px;
+
+	color: #26ae4e;
+
+	padding: 0;
+
+	margin: 0;
+
+	padding-top: 20px;
+
+}
+
+
+
+.banner-descricao {
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 1190px;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	margin-top: 50px;
+
+	text-align: center;
+
+	height: 60px;
+
+}
+
+
+
+.banner-descricao p {
+
+	width: 45%;
+
+	display: inline-block;
+
+	padding: 0;
+
+}
+
+
+
+.banner-descricao span {
+
+	font-family: RalewayBold;
+
+}
+
+
+
+.banner-icone {
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 700px;
+
+	height: auto;
+
+	text-align: center;
+
+	padding-top: 70px;
+
+	padding-bottom: 30px;
+
+}
+
+
+
+.banner-texto-negrito {
+
+	font-family: RalewayBold;
+
+}
+
+
+
+.atributo {
+
+	width: 100%;
+
+	max-width: 1190px;
+
+	margin: auto;
+
+
+
+}
+
+
+
+.celula_direito
+
+{
+
+	color: white; 
+
+	width: 50%;
+
+	float: left;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	box-sizing: border-box;
+
+	padding-right: 20px;
+
+	padding-left: 45px;
+
+	letter-spacing: 0.6px;
+
+}
+
+
+
+.celula_esquerdo
+
+{
+
+	color: white;
+
+	width: 50%;
+
+	float: left;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	letter-spacing: 0.6px;
+
+	margin-bottom: 60px;
+
+}
+
+
+
+.atributo span
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 26px;
+
+}
+
+
+
+i{
+
+	font-family: RalewayItalic;
+
+}
+
+
+
+b
+
+{
+
+	font-family: RalewayBold;
+
+}
+
+
+
+.texto-belts {
+
+	clear: both;
+
+	margin-top: 100px;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 18px;
+
+	font-family: 'RalewayBold';
+
+}
+
+
+
+.belts
+
+{	
+
+	max-width: 940px;
+
+	width: 100%;
+
+	min-height: 607px;
+
+	border: 2px solid #49ae6c;
+
+	border-radius: 8px;
+
+	margin: auto;
+
+	font-size: 18px;
+
+	font-family: 'RalewayRegular';
+
+}
+
+
+
+
+
+.celula_esquerdo_champion
+
+{
+
+	color: white;
+
+	width: 50%;
+
+	float: left;
+
+	height: 140px;
+
+	text-align: right; 
+
+	box-sizing: border-box;
+
+	padding-top: 60px;
+
+	padding-right: 60px;
+
+	margin-bottom: 10px;
+
+}
+
+
+
+.celula_direito_champion
+
+{
+
+    width: 50%;
+
+    float: left;
+
+    box-sizing: border-box;
+
+    padding-top: 60px;
+
+    height: 150px;   
+
+	text-align: left;
+
+}
+
+.celula_esquerdo_yellow
+
+{
+
+
+
+	width: 50%;
+
+	float: left;
+
+	height: 40px;
+
+	margin-top: -30px;
+
+	text-align: right;
+
+}
+
+
+
+.celula_direito_yellow
+
+{
+
+    width: 50%;
+
+    float: left;
+
+    box-sizing: border-box;
+
+    padding-top: 45px;
+
+    height: 40px;
+
+	text-align: left;
+
+}
+
+
+
+.terceiro_belts
+
+{
+
+	max-width: 800px;
+
+	margin: auto;
+
+}
+
+
+
+.celula-dividido-tres
+
+{
+
+	width: 33%;
+
+	float: left;
+
+	margin-top: 50px;
+
+	margin-bottom: 30px;
+
+}
+
+
+
+.celula-dividido-tres span
+
+{
+
+	font-size: 18px;
+
+	font-family: RalewayRegular;
+
+}
+
+
+
+.belts-divisoria
+
+{
+
+	clear: both;
+
+    max-width: 100%;
+
+    width: 855px;
+
+    margin: auto;
+
+    opacity: 30%;
+
+}
+
+
+
+.belts-divisoria hr{
+
+	margin: 0;
+
+}
+
+
+
+.texto-final-belts p {
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+.texto-final-belts
+
+{	
+
+	font-size: 18px;
+
+	font-family: RalewayRegular;
+
+	padding: 40px 0;
+
+}
+
+
+
+.informativo {
+
+	height: 226px;
+
+	background-image: linear-gradient(#00a09d, #00567b);
+
+	margin-bottom: 50px;
+
+	text-align: center;
+
+	box-sizing: border-box;
+
+	padding: 0 10px;
+
+}
+
+
+
+.informativo-conteudo {
+
+	margin: auto;
+
+	text-align: left;
+
+	color: white;
+
+	font-size: 18px;
+
+	font-family: RalewayRegular;
+
+}
+
+
+
+.informativo-conteudo-negrito {
+
+	font-family: RalewayBold;
+
+}
+
+
+
+.informativo-conteudo p {
+
+	margin: 0;
+
+}
+
+
+
+.icone-conversa {
+
+	float: left;
+
+	width: 50%;
+
+}
+
+
+
+.informativo-texto 
+
+{
+
+	float: left;
+
+	width: 50%;
+
+	font-size: 19px;
+
+	font-family: RalewayBold;
+
+	box-sizing: border-box;
+
+	padding-top: 35px;
+
+}
+
+
+
+.informativo-texto p
+
+{
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+
+
+.agende-agora-link {
+
+	display: block;
+
+	width: 200px;
+
+	height: 60px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #FFF;
+
+	border-radius: 10px;
+
+	margin-top: 10px;
+
+}
+
+
+
+.contato {
+
+	width: 100%;
+
+	box-sizing: border-box;
+
+}
+
+
+
+.rodape {
+
+	width: 100%;
+
+	min-height: 830px;
+
+	background-image: url("../imagens/textura.png"), linear-gradient(#020a3a, #037a9a);
+
+	/* W3C */
+
+}
+
+
+
+.rodape-escuro {
+
+	width: 100%;
+
+	min-height: 75px;
+
+	background-color: #100f39;
+
+}
+
+
+
+.contato-geral {
+
+	max-width: 860px;
+
+	min-height: 300px;
+
+	margin: auto;
+
+	padding-top: 50px;
+
+}
+
+
+
+.contato-icone {
+
+	float: left;
+
+	margin-left: 20px;
+
+}
+
+
+
+.contato-texto-icone {
+
+	float: left;
+
+	margin-left: 170px;
+
+	padding-top: 50px;
+
+}
+
+
+
+.contato-texto {
+
+	width: 100%;
+
+	max-width: 400px;
+
+	font-family: RalewayBold;
+
+	font-size: 20px;
+
+	color: white;
+
+}
+
+
+
+.contato-link {
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #4cb06a;
+
+	border-radius: 10px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.divisoria {
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 1190px;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-right: 20px;
+
+}
+
+
+
+.rodape-recipiente {
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 1190px;
+
+	height: auto;
+
+	margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-institucional {
+
+	float: left;
+
+	width: 33.3%;
+
+	min-height: 350px;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-right: 100px;
+
+	font-family: RalewayRegular;
+
+	font-size: 16px;
+
+	line-height: 30px;
+
+	color: white;
+
+}
+
+
+
+.rodape-parte-links {
+
+	float: left;
+
+	width: 33.3%;
+
+	min-height: 350px;
+
+}
+
+
+
+.rodape-parte-contato {
+
+	float: left;
+
+	width: 33.4%;
+
+	min-height: 350px;
+
+}
+
+
+
+.conheca-a-vf-link {
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #FFF;
+
+	border-radius: 10px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-links h3 {
+
+	font-family: RalewayBold;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-links ul {
+
+	font-family: RalewayItalic;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	list-style: none;
+
+	line-height: 50px;
+
+	padding: 0;
+
+	padding-left: 20px;
+
+	padding-top: 25px;
+
+}
+
+
+
+.rodape-parte-links a {
+
+	font-family: RalewayItalic;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.rodape-parte-links table {
+
+	margin-top: 25px;
+
+	margin-left: 20px;
+
+}
+
+
+
+.como-chegar-link {
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #FFF;
+
+	border-radius: 10px;
+
+	margin-top: 44px;
+
+	margin-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato h3 {
+
+	font-family: RalewayBold;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato p {
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-top: 35px;
+
+	line-height: 23px;
+
+}
+
+
+
+.rodape-escuro span {
+
+	float: left;
+
+	padding-left: 20px;
+
+	font-family: Verdana;
+
+	color: white;
+
+	font-size: 12px;
+
+	padding-top: 30px;
+
+}
+
+
+
+.rodape-escuro a {
+
+	float: right;
+
+	padding-right: 20px;
+
+	padding-top: 20px;
+
+}
+
+
+
+@media screen and (max-width: 1280px) {
+
+	/* diminuindo fonte do menu */
+
+	.menu ul li a {
+
+		font-size: 14px;
+
+	}
+
+	/* diminuindo espaçamento lateral esquerdo */
+
+	.logo {
+
+		margin-left: 30px;
+
+	}
+
+	/* diminuindo espaçamento lateral direito */
+
+	.menu {
+
+		margin-right: 30px;
+
+	}
+
+	/* diminuindo espaçamento entre os itens do menu */
+
+	.menu ul li:nth-child(-n+6)/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+		{
+
+		margin-right: 35px;
+
+	}
+
+	
+
+	.contato, .banner {
+
+		box-sizing: border-box;
+
+		padding-left: 10px;
+
+		padding-right: 10px;
+
+	}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 1152px) {
+
+	/* diminuindo fonte do menu */
+
+	.menu ul li a {
+
+		font-size: 12px;
+
+	}
+
+	.rodape {
+
+		min-height: 987px;
+
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+	input[type="text"]
+
+	{
+
+		margin-right: 2%;
+
+		width: 31.9%;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.menu {
+
+		display: none;
+
+		float: none;
+
+		width: 100%;
+
+		text-align: center;
+
+		margin: 0;
+
+		padding: 0;
+
+		margin-right: 70px;
+
+		padding-top: 115px;
+
+		padding-bottom: 30px;
+
+	}
+
+	.menu ul li {
+
+		display: block;
+
+		margin: 0;
+
+		padding: 0;
+
+	}
+
+	.menu-icone {
+
+		display: block;
+
+	}
+
+	.topo {
+
+		line-height: 40px;
+
+	}
+
+	/* aumentando fonte do menu */
+
+	.menu ul li a {
+
+		font-size: 16px;
+
+	}
+
+	/* zerando esse item por ter sido atribuido no media 1280 */
+
+	.menu ul li:nth-child(-n+6)/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+		{
+
+		margin-right: 0px;
+
+	}
+
+	.banner-descricao {
+
+		font-size: 14px;
+
+	}
+
+	.banner-texto {
+
+		font-size: 16px;
+
+		box-sizing: border-box;
+
+		padding-left: 20px;
+
+	}
+
+
+
+	.celula_esquerdo{
+
+		font-size: 16px;
+
+	}
+
+
+
+	.celula_direito{
+
+		font-size: 16px;
+
+	}
+
+
+
+	.belts, .celula-dividido-tres span, .texto-final-belts
+
+	{
+
+		font-size: 16px;
+
+	}
+
+
+
+	.belts-divisoria
+
+	{
+
+		box-sizing: border-box;
+
+		padding-left: 15px;
+
+		padding-right: 15px;
+
+	}
+
+
+
+	.informativo-texto {
+
+		font-size: 16px;
+
+	}
+
+
+
+	.informativo-conteudo {
+
+		font-size: 16px;
+
+	}
+
+
+
+	.contato-texto-icone {
+
+		margin-left: 90px;
+
+		padding-top: 25px;
+
+	}
+
+
+
+	.contato-icone {
+
+		width: 200px;
+
+		height: 200px;
+
+	}
+
+
+
+	.contato-geral {
+
+		max-width: 710px;
+
+	}
+
+	.rodape-parte-institucional {
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		min-height: 0;
+
+		padding-right: 0;
+
+		padding-left: 0;
+
+		padding-top: 30px;
+
+	}
+
+	.rodape-parte-links {
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		text-align: center;
+
+	}
+
+	.rodape-parte-contato {
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		padding-bottom: 50px;
+
+	}
+
+	.logo-rodape {
+
+		display: block;
+
+		margin: auto;
+
+	}
+
+	.rodape-parte-institucional p {
+
+		text-align: justify;
+
+		padding-left: 50px;
+
+		padding-right: 50px;
+
+	}
+
+	.conheca-a-vf-link {
+
+		display: block;
+
+		margin: auto;
+
+		margin-top: 40px;
+
+	}
+
+	.rodape-parte-links h3 {
+
+		display: block;
+
+		text-align: center;
+
+		margin-top: 80px;
+
+		font-size: 24px;
+
+		padding-left: 0;
+
+	}
+
+	.rodape-parte-links ul {
+
+		display: block;
+
+		margin: auto;
+
+		padding-left: 0;
+
+	}
+
+	.rodape-parte-links table {
+
+		display: block;
+
+		margin: auto;
+
+		width: 230px;
+
+	}
+
+	.rodape-parte-contato h3 {
+
+		display: block;
+
+		text-align: center;
+
+		margin-top: 80px;
+
+		font-size: 24px;
+
+		padding-left: 0;
+
+	}
+
+	.rodape-parte-contato p {
+
+		text-align: center;
+
+		padding-left: 0;
+
+	}
+
+	.como-chegar-link {
+
+		margin: auto;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	.banner h1 {
+
+		font-size: 40px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 150px;
+
+	}
+
+	.banner h2 {
+
+		font-size: 24px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 20px;
+
+	}
+
+	.banner-descricao {
+
+		width: 400px;
+
+		height: auto;
+
+	}
+
+	.banner-descricao p {
+
+		display: block;
+
+		width: auto;
+
+	}
+
+	
+
+	.celula_esquerdo
+
+	{
+
+		float: none;
+
+		margin: auto;
+
+	}
+
+	
+
+	.celula_direito
+
+	{
+
+		float: none;
+
+    	margin: auto;
+
+    	padding: 0;
+
+	}
+
+
+
+	.belts p 
+
+	{
+
+		padding: 0;
+
+		margin: 0;
+
+	}
+
+
+
+	.celula_esquerdo_champion, .celula_direito_champion, .celula_direito_yellow
+
+	{
+
+		width: 100%;
+
+		float: none;
+
+		margin: auto;
+
+		padding: 20px 0;
+
+		height: auto;
+
+		text-align: center;
+
+		padding-right: 0;
+
+	}
+
+
+
+	.celula-dividido-tres
+
+	{
+
+		float: none;
+
+   		margin: auto;
+
+    	text-align: center;
+
+    	box-sizing: border-box;
+
+		padding: 20px 0;
+
+		width: 95%;
+
+	}
+
+
+
+	.informativo {
+
+		height: 435px;
+
+	}
+
+
+
+	.icone-conversa, .informativo-texto
+
+	{
+
+		float: none;
+
+		width: 100%;
+
+		margin: auto;
+
+		font-size: 14px;
+
+	}
+
+
+
+	.agende-agora-link
+
+	{
+
+		display: inline-block;
+
+		margin-top: 20px;
+
+	}
+
+
+
+	.informativo-conteudo {
+
+		text-align: center;
+
+	}
+
+	.contato-icone {
+
+		float: none;
+
+		display: block;
+
+		margin: auto;
+
+	}
+
+	.contato-texto-icone {
+
+		float: none;
+
+		display: block;
+
+		margin: auto;
+
+		text-align: center;
+
+		padding-top: 0;
+
+	}
+
+	.contato-texto {
+
+		width: 100%;
+
+		max-width: 100%;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+	}
+
+	.contato-link {
+
+		margin: auto;
+
+	}
+
+	.divisoria {
+
+		padding-top: 30px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+	.rodape-escuro {
+
+		text-align: center;
+
+	}
+
+	.rodape-escuro span {
+
+		float: none;
+
+		display: block;
+
+		padding-right: 20px;
+
+	}
+
+	.rodape-escuro a {
+
+		float: none;
+
+		display: block;
+
+		padding-bottom: 20px;
+
+		padding-right: 0;
+
+	}
+
+
+
+	.informativo-conteudo
+
+	{
+
+		font-size: 14px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 414px) {
+
+	.banner h1 {
+
+		padding-top: 90px;
+
+	}
+
+	.banner-descricao {
+
+		width: 90%;
+
+	}
+
+
+
+	.belts, .celula-dividido-tres span, .texto-final-belts
+
+	{
+
+		font-size: 14px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+	.banner-descricao {
+
+		font-size: 14px;
+
+	}
+
+	.banner-texto {
+
+		width: 300px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+	.informativo{
+
+		height: 460px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+	.banner-texto {
+
+		width: 250px;
+
+		font-size: 12px;
+
+	}
+
+
+
+	.logo
+
+	{
+
+		width: 160px;
+
+	}
+
+}

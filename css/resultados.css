@@ -1,0 +1,2384 @@
+body
+{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+@font-face 
+
+{
+	font-family: RalewaySemiBold;
+
+	src: url(../fontes/Raleway-SemiBold.ttf);
+}
+
+
+
+@font-face 
+
+{
+
+	font-family: RalewayBold;
+
+	src: url(../fontes/Raleway-Bold.ttf);
+
+}
+
+
+
+@font-face 
+
+{
+
+	font-family: RalewayRegular;
+
+	src: url(../fontes/Raleway-Regular.ttf);
+
+}
+
+
+
+@font-face 
+
+{
+
+	font-family: RalewayItalic;
+
+	src: url(../fontes/Raleway-Italic.ttf);
+
+}
+
+
+
+.recipiente
+
+{
+
+	width: 100%;
+
+	max-width: 1366px;
+
+	margin: auto;
+
+}
+
+
+
+.topo
+
+{
+
+	width: 100%;
+
+	min-height: 115px;
+
+	background-color: #020031;
+
+	line-height: 115px;
+
+}
+
+
+
+.logo
+
+{
+
+	margin-top: 18px;
+
+	margin-left: 70px;
+
+	float: left;
+
+}
+
+
+
+.menu
+
+{
+
+	float: right;
+
+	margin: 0;
+
+	padding: 0;
+
+	margin-right: 70px;
+
+}
+
+
+
+.menu ul
+
+{
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li
+
+{
+
+	display: inline;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+{
+
+	margin-right: 43px;
+
+}
+
+
+
+.menu ul li a
+
+{
+
+	color: #FFF;
+
+	font-family: RalewaySemiBold;
+
+	font-size: 16px;
+
+	text-decoration: none;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(5) a /* Selecionar apenas o elemento de número 4, no caso, "Para profissionais" */
+
+{
+
+	color: #49af67;
+
+	padding-left: 15px;
+
+	background-image: url(../imagens/seta-menu-ativo.png);
+
+	background-repeat: no-repeat;
+
+	cursor: default;
+
+}
+
+
+
+.menu-icone
+
+{
+
+	display: none;
+
+	font-size: 24px;
+
+	float: right;
+
+	margin-right: 30px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.menu-icone a
+
+{
+
+	color: white;
+
+}
+
+
+
+.banner
+
+{
+
+	width: 100%;
+
+	min-height: 607px;
+
+	padding: 0;
+
+	margin: 0;
+
+	background-image: url('../imagens/banner-cursos-rapidos.png');
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+	background-attachment: local;
+
+	text-align: center;
+
+}
+
+
+
+.banner h1
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 60px;
+
+	color: white;
+
+	padding: 0;
+
+	margin: 0;
+
+	padding-top: 100px;
+
+}
+
+
+
+.banner h2
+
+{
+
+	font-family: RalewaySemiBold;
+	font-size: 36px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+
+}
+
+
+
+.banner-descricao
+
+{
+
+	margin: auto;
+	width: 100%;
+	max-width: 644px;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	padding-top: 20px;
+
+}
+
+
+
+
+.banner-texto
+
+{
+
+	float: right;
+
+	width: 100%;
+
+	max-width: 380px;
+
+	height: auto;
+
+	font-family: RalewaySemiBold;
+
+	font-size: 22px;
+
+	text-align: left;
+
+	color: white;
+
+	padding-top: 20px;
+
+}
+
+
+
+.imagem-responsiva
+
+{
+
+	max-width: 100%;
+
+	height: auto;
+
+}
+
+
+
+.resultados
+{
+	width: 100%;
+	min-height: 355px;
+	background-image: linear-gradient( to right, #017f6d, #00ac57, #009067);
+}
+
+
+
+.resultados h1
+{
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	font-family: RalewayBold;
+	font-size: 25px; 
+	color: white;
+	text-align: center;
+}
+
+
+.borda_video
+{
+	width: 360px; 
+	padding-bottom: 30px;
+}
+
+
+b
+{
+	font-family: RalewayBold;
+}
+
+.icone-responsivo
+{
+	max-width: 100%;
+	height: auto;
+	padding: 30px;
+	width: 90px;
+}
+
+.cartao-medio
+{
+	display: inline-block;
+	height: auto;
+	width: 300px;
+	border: 2px solid white;
+	border-radius: 20px;
+	margin: 10px  20px  30px 20px;
+}
+
+
+.cartao-medio p
+{
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+.marcadador
+{
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	color: white;
+	padding-top: 10px;
+	padding: 10px; 
+	background: #131141;
+	clip-path: circle(); 
+	margin-bottom: 0;
+	font-family: RalewayBold;
+	font-size: 22px;
+}
+
+.cartao-pequeno
+{
+	float: left;
+	height: 119px;
+	width: 231px;
+	border: 2px solid #4cb06a;
+	border-radius: 20px;
+	margin: 30px  20px  0px 20px;
+	position: relative;
+}
+
+
+.cartao-pequeno p
+{
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 18px;
+}
+
+
+.alinhamento-cartao
+{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.caracteristicas
+{
+
+	width: 100%;
+
+	min-height: 300px;
+
+	background-color: #110f3a;
+
+	box-sizing: border-box;
+
+	padding-bottom: 40px;
+
+}
+
+.recipiente_caracteristicas
+{
+	margin: auto;  
+	max-width: 1135px;
+	width: 100%;
+}
+
+.depoimentos_esquerda
+{
+	float: left;
+	width: 40%;
+	margin-right: 10%;
+}
+
+
+.depoimentos_direita
+{
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+}
+
+.recipiente_video
+{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.diagrama
+{
+	width: 100%; 
+	height: auto; 
+	text-align: center; 
+	padding-top: 40px; 
+	padding-bottom: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.diagrama-mobile
+{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	display: none;
+}
+
+.texto-diagrama
+{
+	width: 300px; 
+	height: 150px; 
+	margin: auto;
+}
+
+.seta-inicio
+{
+	width: 300px; 
+	height: 100px; 
+	background-image: url('../imagens/diagrama-2.svg'); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	text-align: center; 
+	margin: auto;
+}
+
+.seta-continua
+{
+	width: 300px; 
+	height:  100px; 
+	margin: auto; 
+	background-image: url('../imagens/diagrama-1.svg'); 
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+.seta-fim
+{
+	width: 300px; 
+	height:  100px; 
+	margin: auto; 
+	background-image: url('../imagens/diagrama-3.svg'); 
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+.limpa_float
+{
+	clear: both;
+}
+
+
+.linha_separacao_direita
+{
+	width: 300px;
+    margin: 0;
+    border: 2px solid #26ae4e;
+}
+
+.linha_separacao_esquerda
+{
+	width: 300px;
+    margin-right: 0;
+    border: 2px solid #26ae4e;
+}
+
+.cor_linha
+{
+	max-width: 450px;
+	border-color: #4a9d34;
+}
+
+.coluna_aumentar
+{
+	float: left;
+	width: 40%;
+	margin-right: 10%;
+}
+
+.coluna_reduzir
+{
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+}
+
+.recipiente_exemplos
+{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.caracteristicas h2
+{
+	font-family: RalewaySemiBold;
+	font-size: 27px;
+	color: #26ae4e;
+	padding: 0;
+	margin: auto;
+	padding-top: 40px;
+	text-align: center;
+	max-width: 520px;
+}
+
+.video_direita iframe
+{
+	width: 360px; 
+	height: 200px;
+}
+
+.video_esquerda iframe
+{
+	width: 360px; 
+	height: 200px;
+}
+
+.video_direita
+{
+	text-align: left;
+	width: 100%;
+	height: auto;
+}
+
+.video_esquerda
+{
+	text-align: right;
+	width: 100%;
+	height: auto;
+}
+
+
+.estrutura
+{
+	width: 100%;
+	min-height: 400px;
+	background-color: #010027;
+	box-sizing: border-box;
+	padding-bottom: 40px;
+}
+
+.estrutura h2
+{
+	font-family: RalewaySemiBold;
+	font-size: 28px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+.estrutura h3
+{
+	font-family: RalewayBold;
+	font-size: 18px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.estrutura p
+{
+	font-family: RalewaySemiBold; 
+	font-size: 14px;
+	color: white;
+}
+
+
+.exemplos
+{
+
+	width: 100%;
+	min-height: 400px;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	padding-bottom: 40px;
+
+}
+
+
+.alinhamento_centro
+{
+	text-align: center;
+}
+
+.alinhamento_esquerda
+{
+	text-align: left;
+}
+
+.exemplos h1
+{
+	font-family: RalewaySemiBold;
+	font-size: 28px;
+	color: black;
+	padding: 0;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+.exemplos p
+{
+	font-family: RalewaySemiBold; 
+	font-size: 16px;
+}
+
+.videos
+{
+	width: 100%;
+	min-height: 400px;
+	box-sizing: border-box;
+	padding-bottom: 40px;
+}
+
+
+.videos h2
+{
+	font-family: RalewayBold;
+	font-size: 21px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+
+.videos p
+{
+	font-family: RalewayRegular;
+	font-size: 18px;
+	padding-top: 30px;
+	color: white;
+	margin-top: 0;
+}	
+
+.borda_azul
+{
+	width: 50%; 
+	float: left; 
+	background-color: #037a9a; 
+	height: 7px;
+}
+
+.borda_verdade
+{
+	width: 50%; 
+	float: left; 
+	background-color: #4cb06a;
+	height: 7px;
+}
+
+.alinhamento_direita
+{
+	text-align: right;
+}
+
+.rodape
+{
+	width: 100%;
+	min-height: 1496px;
+	background-image: url("../imagens/textura.png"), linear-gradient(#02002a, #037a9a); /* W3C */
+	padding-bottom: 30px;
+}
+
+
+
+.rodape-escuro
+{
+	width: 100%;
+	min-height: 75px;
+	background-color: #100f39;
+}
+
+
+
+.contato-geral
+{
+	max-width: 860px;
+	min-height: 300px;
+	margin: auto;
+	padding-top: 50px;
+}
+
+
+
+.contato-icone
+{
+	float: left;
+	margin-left: 20px;
+}
+
+
+
+.contato-texto-icone
+{
+	float: left;
+	margin-left: 170px;
+	padding-top: 50px;
+}
+
+
+
+.contato-texto
+{
+	width: 100%;
+	max-width: 400px;
+	font-family: RalewayBold;
+	font-size: 20px;
+	color: white;
+}
+
+
+
+.contato-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #4cb06a;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+
+
+.divisoria
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1190px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+.rodape-recipiente
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1190px;
+	height: auto;
+	margin-top: 40px;
+}
+
+
+
+.rodape-parte-institucional
+{
+	float: left;
+	width: 33.3%;
+	min-height: 350px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 100px;
+	font-family: RalewayRegular;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+}
+
+
+
+.rodape-parte-links
+{
+	float: left;
+	width: 33.3%;
+	min-height: 350px;
+}
+
+
+
+.rodape-parte-contato
+{
+	float: left;
+	width: 33.4%;
+	min-height: 350px;
+}
+
+
+
+.conheca-a-vf-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-links h3
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-links ul
+
+{
+
+	font-family: RalewayItalic;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	list-style: none;
+
+	line-height: 50px;
+
+	padding: 0;
+
+	padding-left: 20px;
+
+	padding-top: 25px;
+
+}
+
+
+
+.rodape-parte-links a
+
+{
+
+	font-family: RalewayItalic;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.rodape-parte-links table
+
+{
+
+	margin-top: 25px;
+
+	margin-left: 20px;
+
+}
+
+
+
+.como-chegar-link
+
+{
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #FFF;
+
+	border-radius: 10px;
+
+	margin-top: 44px;
+
+	margin-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato h3
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato p
+
+{
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-top: 35px;
+
+	line-height: 23px;
+
+}
+
+
+
+.rodape-escuro span
+
+{
+
+	float: left;
+
+	padding-left: 20px;
+
+	font-family: Verdana;
+
+	color: white;
+
+	font-size: 12px;
+
+	padding-top: 30px;
+
+}
+
+
+
+.rodape-escuro a
+
+{
+
+	float: right;
+
+	padding-right: 20px;
+
+	padding-top: 20px;
+
+}
+
+
+
+@media screen and (max-width: 1280px) 
+
+{
+
+	/* diminuindo fonte do menu */
+
+	.menu ul li a
+
+	{
+
+		font-size: 14px;
+
+	}
+
+
+
+	/* diminuindo espaçamento lateral esquerdo */
+
+	.logo
+
+	{
+
+		margin-left: 30px;
+
+	}
+
+
+
+	/* diminuindo espaçamento lateral direito */
+
+	.menu
+
+	{
+
+		margin-right: 30px;
+
+	}
+
+
+
+	/* diminuindo espaçamento entre os itens do menu */
+
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+	{
+
+		margin-right: 35px;
+
+	}
+
+
+	.coluna_aumentar
+	{
+		float: left;
+		width: 50%;
+		margin-right: 0;
+	}
+
+	.coluna_reduzir
+	{
+		float: left;
+		 width: 50%;
+		 margin-left: 0;
+	}
+
+
+	.cartao-medio 
+	{
+	    width: 260px;
+	}
+
+
+	.cartao-pequeno 
+	{
+       height: 100px;
+       width: 210px;
+       margin: 30px 18px 0px 18px;
+	}
+
+
+	.recipiente_caracteristicas 
+	{
+    	max-width: 1007px;
+	}
+
+
+	.depoimentos_direita 
+	{
+    	float: left;
+   		width: 45%;
+    	margin-left: 5%;
+    	box-sizing: border-box;
+   		padding-right: 20px;
+	}
+
+	.depoimentos_esquerda 
+	{
+    	 float: left;
+  	     width: 45%;
+         margin-right: 5%;
+		 box-sizing: border-box;
+   		 padding-left: 20px;
+	}
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 1152px) 
+
+{
+
+	/* diminuindo fonte do menu */
+
+	.menu ul li a
+	{
+
+		font-size: 12px;
+
+	}
+
+
+
+	.rodape
+
+	{
+
+		min-height: 1530px;
+
+	}
+
+
+	.banner h2 
+	{
+    	font-size: 33px;
+	}
+
+
+	.resultados h1 
+	{
+    	font-size: 23px;
+	}
+
+	.caracteristicas h2 
+	{
+	    font-size: 25px;
+	    max-width: 611px;
+	}
+
+	.estrutura h2 
+	{
+    	font-size: 26px;
+	}
+
+	.exemplos h1 
+	{
+    	font-size: 26px;
+	}
+
+	.videos p 
+	{
+    	font-size: 17px;
+	}
+
+	.videos h2 
+	{
+	    font-size: 20px;
+	}
+
+
+	.video_direita iframe
+	{
+		width: 300px; 
+		height: 160px;
+	}
+
+	.video_esquerda iframe
+	{
+		width: 300px; 
+		height: 160px;
+	}
+
+	.borda_video
+	{
+		width: 300px; 
+		padding-bottom: 30px;
+	}
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 1024px) 
+
+{
+
+	.menu
+
+	{
+
+		display: none;
+
+		float: none;
+
+		width: 100%;
+
+		text-align: center;
+
+		margin: 0;
+
+		padding: 0;
+
+		margin-right: 70px;
+
+		padding-top: 115px;
+
+		padding-bottom: 30px;
+
+	}
+
+
+
+	.menu ul li
+
+	{
+
+		display: block;
+
+		margin: 0;
+
+		padding: 0;
+
+	}
+
+
+
+	.menu-icone
+
+	{
+
+		display: block;
+
+	}
+
+
+
+	.topo
+
+	{
+
+		line-height: 40px;
+
+	}
+
+
+
+	/* aumentando fonte do menu */
+
+	.menu ul li a
+
+	{
+
+		font-size: 16px;
+
+	}
+
+
+
+	/* zerando esse item por ter sido atribuido no media 1280 */
+
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+	{
+
+		margin-right: 0px;
+
+	}
+
+
+
+	.banner-icone-texto
+
+	{
+
+		width: 380px;
+
+		box-sizing: border-box;
+
+		padding: 20px;
+
+		padding-top: 40px;
+
+	}
+
+
+
+	.banner-texto
+
+	{
+
+		width: 200px;
+
+		font-size: 16px;
+
+		box-sizing: border-box;
+
+		padding-left: 20px;
+
+	}
+
+
+
+	.caracteristicas-tabela-esquerda
+
+	{
+
+		float: none;
+
+		font-size: 14px;
+
+		margin: auto;
+
+		margin-top: 30px;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.caracteristicas-tabela-direita
+
+	{
+
+		float: none;
+
+		margin-top: 0;
+
+		font-size: 14px;
+
+		margin: auto;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.caracteristicas-tabela-esquerda tr
+
+	{
+
+		height: 25px;
+
+	}
+
+
+
+	.caracteristicas-tabela-direita tr
+
+	{
+
+		height: 25px;
+
+	}
+
+
+
+	.resultados h1
+
+	{
+
+		box-sizing: border-box;
+
+		padding-left: 20px;
+
+		padding-right: 20px;
+
+		padding-top: 40px;
+
+	}
+
+
+
+	.contato-texto-icone
+
+	{
+
+		margin-left: 90px;
+
+		padding-top: 25px;
+
+	}
+
+
+
+	.contato-icone
+
+	{
+
+		width: 200px;
+
+		height: 200px;
+
+	}
+
+
+
+	.contato-geral
+
+	{
+
+		max-width: 710px;
+
+	}
+
+
+
+	.rodape-parte-institucional
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		min-height: 0;
+
+		padding-right: 0;
+
+		padding-left: 0;
+
+		padding-top: 30px;
+
+	}
+
+
+
+	.rodape-parte-links
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		text-align: center;
+
+	}
+
+
+
+	.rodape-parte-contato
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		padding-bottom: 50px;
+
+	}
+
+
+
+	.logo-rodape
+
+	{
+
+		display: block;
+
+		margin: auto;
+
+	}
+
+
+
+	.rodape-parte-institucional p
+
+	{
+
+		text-align: justify;
+
+		padding-left: 50px;
+
+		padding-right: 50px;
+
+	}
+
+
+
+	.conheca-a-vf-link 
+
+	{
+
+	    display: block;
+
+	    margin: auto;
+
+	    margin-top: 40px;
+
+	}
+
+
+
+	.rodape-parte-links h3
+
+	{
+
+		display: block;
+
+		text-align: center;
+
+		margin-top: 80px;
+
+		font-size: 24px;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.rodape-parte-links ul
+
+	{
+
+		display: block;
+
+		margin: auto;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.rodape-parte-links table
+
+	{
+
+		display: block;
+
+		margin: auto;
+
+		width: 230px;
+
+	}
+
+
+
+	.rodape-parte-contato h3
+	{
+
+		display: block;
+
+		text-align: center;
+
+		margin-top: 80px;
+
+		font-size: 24px;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.rodape-parte-contato p
+	{
+
+		text-align: center;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.como-chegar-link
+	{
+
+		margin: auto;
+
+	}
+
+
+	.cartao-pequeno 
+	{
+    	height: 92px;
+    	width: 203px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 992px) 
+{
+
+	.cartao-pequeno 
+	{
+		float: none;
+    	display: block;
+    	margin: auto;
+    	margin-bottom: 30px;
+
+	}
+
+
+	.coluna_aumentar 
+	{
+  	  float: none;
+  	  display: block;
+   	  width: 50%;
+   	  margin: auto;
+	}
+
+
+	.coluna_reduzir 
+	{
+   		 float: none;
+   		 display: block;
+   		 width: 50%;
+   		 margin: auto;
+	}
+
+	.banner h2 
+	{
+    	font-size: 29px;
+	}
+
+
+	.resultados h1 
+	{
+    	font-size: 22px;
+	}
+
+	.estrutura h2 
+	{
+    	font-size: 24px;
+	}
+
+	.exemplos h1 
+	{
+    	font-size: 24px;
+	}
+
+	.exemplos p
+	{
+		font-size: 15px;
+	}
+
+	.cartao-pequeno p 
+	{
+    	font-size: 16px;
+	}
+
+	.cartao-medio p 
+	{
+    	font-size: 17px;
+	}
+	
+
+}
+
+
+
+@media screen and (max-width: 768px) 
+{
+
+	.depoimentos_direita 
+	{
+    	float: none;
+    	display: block;
+   		width: 100%;
+    	margin-left: 0;
+    	box-sizing: border-box;
+   		padding-right: 20px;
+   		padding-left: 20px;
+   		max-width: 600px;
+   		margin: auto;
+   		margin-top: 73px;
+	}
+
+	.depoimentos_esquerda 
+	{
+    	float: none;
+    	display: block;
+  	    width: 100%;
+        margin-right: 0;
+		box-sizing: border-box;
+   		padding-left: 20px;
+   		padding-right: 20px;
+   		max-width: 600px;
+   		margin: auto;
+	}
+
+	.alinhamento_direita
+	{
+		text-align: center;
+	}
+
+	.alinhamento_esquerda 
+	{
+   	 	text-align: center;
+	}
+
+	.linha_separacao_esquerda 
+	{
+    	margin: auto;
+	}
+
+	.linha_separacao_direita 
+	{
+		margin: auto;
+	}
+
+	.banner h1
+	{
+
+		font-size: 40px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 150px;
+
+	}
+
+	.banner h2
+
+	{
+
+		font-size: 24px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 20px;
+
+	}
+
+
+
+	.banner-descricao
+
+	{
+
+		font-size: 16px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 20px;
+
+	}
+
+
+
+	.caracteristicas-tabela-esquerda
+
+	{
+
+		width: 85%;
+
+		margin-top: 30px;
+
+	}
+
+
+
+	.caracteristicas-tabela-direita
+
+	{
+
+		width: 85%;
+
+	}
+
+
+
+	.resultados h1
+
+	{
+
+		padding-top: 30px;
+		font-size: 20px;
+
+	}
+
+
+
+	.contato-icone
+
+	{
+
+		float: none;
+		display: block;
+		margin: auto;
+
+	}
+
+
+
+	.contato-texto-icone
+
+	{
+
+		float: none;
+
+		display: block;
+
+		margin: auto;
+
+		text-align: center;
+
+		padding-top: 0;
+
+	}
+
+
+
+	.contato-texto
+
+	{
+
+		width: 100%;
+
+		max-width: 100%;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+	}
+
+
+
+	.contato-link
+	{
+
+		margin: auto;
+
+	}
+
+
+
+	.divisoria
+
+	{
+
+		padding-top: 30px;
+
+	}
+
+
+	.resultados h1 
+	{
+    	font-size: 22px;
+	}
+
+	.caracteristicas h2 
+	{
+	    font-size: 23px;
+	}
+
+	.estrutura h2 
+	{
+    	font-size: 22px;
+	}
+
+	.exemplos h1 
+	{
+    	font-size: 22px;
+	}
+
+	.exemplos p
+	{
+		font-size: 14px;
+	}
+
+	.cartao-pequeno p 
+	{
+    	font-size: 16px;
+	}
+
+	.cartao-medio p 
+	{
+    	font-size: 16px;
+	}
+
+	.videos p 
+	{
+    	font-size: 16px;
+	}
+
+	.diagrama 
+	{
+   		display: none
+	}
+
+	.diagrama-mobile
+	{
+		display: block;
+		padding-top: 30px;
+	}
+
+
+	.video_direita
+	{
+		text-align: center;
+	}
+
+	.video_esquerda
+	{
+		text-align: center;
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) 
+{
+	.video_direita
+	{
+		margin-left: 0px;
+   		margin-right: 0px;
+	}
+
+	.video_esquerda
+	{
+		margin-left: 0px;
+ 	    margin-right: 0px;
+	}
+
+	.rodape-escuro
+	{
+		text-align: center;
+	}
+
+	.rodape-escuro span
+	{
+		float: none;
+		display: block;
+		padding-right: 20px;
+	}
+
+	.rodape-escuro a
+	{
+		float: none;
+		display: block;
+		padding-bottom: 20px;
+		padding-right: 0;
+	}
+
+
+	.banner h2 
+	{
+		font-size: 19px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+
+	.caracteristicas h2 
+	{
+		font-size: 19px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+
+	.estrutura h2 
+	{
+		font-size: 19px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box; 
+	}
+
+	.exemplos h1 
+	{
+       font-size: 20px; 
+       padding-right: 20px;
+   	   padding-left: 20px;
+   	   box-sizing: border-box; 
+	}
+
+	.exemplos p
+	{
+		font-size: 14px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+
+	.cartao-pequeno p 
+	{
+    	font-size: 14px;
+
+	}
+
+	.cartao-medio p 
+	{
+		font-size: 14px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+
+	.videos p 
+	{
+		font-size: 14px; 
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+
+	.banner h2
+	{
+		font-size: 21px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+
+	.resultados h1 
+	{
+   	   font-size: 19px;
+   	   padding-right: 20px;
+   	   padding-left: 20px;
+   	   box-sizing: border-box;
+	}
+
+}
+
+
+
+@media screen and (max-width: 414px) 
+
+{
+
+	.caracteristicas-tabela-esquerda
+
+	{
+
+		width: 90%;
+
+		margin-top: 20px;
+
+	}
+
+
+
+	.caracteristicas-tabela-direita
+
+	{
+
+		width: 90%;
+
+	}
+
+
+
+	.banner h1
+
+	{
+
+		padding-top: 90px;
+		font-size: 35px;
+	}
+
+	.resultados h1 
+	{
+    	font-size: 18px;
+	}
+
+
+	.cartao-medio p 
+	{
+    	font-size: 14px;
+	}
+
+	.cartao-medio 
+	{
+    	width: 218px;
+	}
+
+
+	.caracteristicas h2 
+	{
+    	font-size: 18px;
+	}
+
+	.cartao-pequeno p 
+	{
+    	font-size: 14px;
+	}
+
+	.estrutura h2 
+	{
+    	font-size: 18px;
+	}
+
+	.linha_separacao_direita 
+	{
+	    width: 200px;
+	}
+
+	.linha_separacao_esquerda 
+	{
+     width: 200px;
+	}
+
+	.video_direita iframe
+	{
+		width: 280px; 
+		height: 140px;
+	}
+
+	.video_esquerda iframe
+	{
+		width: 280px; 
+		height: 140px;
+	}
+
+	.borda_video
+	{
+		width:  280px; 
+		padding-bottom: 30px;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 375px) 
+
+{
+
+	.banner-icone-texto
+	{
+		width: 375px;
+	}
+
+
+	.banner-texto
+	{
+		width: 195px;
+	}
+
+
+
+	.resultados h1
+	{
+		font-size: 14px;
+	}
+
+
+	.banner h1
+	{
+		padding-top: 90px;
+		font-size: 36px;
+	}
+
+	.resultados h1 
+	{
+    	font-size: 17px;
+	}
+
+
+	.cartao-medio p 
+	{
+    	font-size: 12px;
+	}
+
+	.cartao-medio 
+	{
+    	width: 218px;
+	}
+
+
+	.caracteristicas h2 
+	{
+    	font-size: 16px;
+	}
+
+	.cartao-pequeno p 
+	{
+    	font-size: 12px;
+	}
+
+	.estrutura h2 
+	{
+    	font-size: 16px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 360px) 
+
+{
+
+	.banner-icone-texto
+	{
+		width: 360px;
+	}
+
+
+
+	.banner-texto
+	{
+		width: 180px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 320px) 
+
+{
+
+	.caracteristicas h2 
+	{
+    	max-width: 100%;
+	}
+
+	.banner-descricao 
+	{
+    	font-size: 14px;
+	}
+
+	.banner-icone-texto
+
+	{
+
+		width: 320px;
+
+	}
+
+
+
+	.banner-texto
+	{
+		width: 140px;
+		font-size: 12px;
+	}
+
+
+
+	.caracteristicas-tabela-esquerda
+	{
+		font-size: 12px;
+	}
+
+
+
+	.caracteristicas-tabela-direita
+	{
+		font-size: 12px;
+	}
+
+}

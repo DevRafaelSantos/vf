@@ -1,0 +1,1513 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url(../fontes/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: RalewayBold;
+    src: url(../fontes/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: RalewayRegular;
+    src: url(../fontes/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: RalewayItalic;
+    src: url(../fontes/Raleway-Italic.ttf);
+}
+
+@font-face {
+    font-family: RalewaySemiBoldItalic;
+    src: url(../fontes/Raleway-SemiBoldItalic.ttf);
+}
+
+.recipiente {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.topo {
+    width: 100%;
+    min-height: 115px;
+    background-color: #020031;
+    line-height: 115px;
+}
+
+.logo {
+    margin-top: 18px;
+    margin-left: 70px;
+    float: left;
+}
+
+.menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li:nth-child(-n+6)
+/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+    {
+    margin-right: 43px;
+}
+
+.menu ul li a {
+    color: #FFF;
+    font-family: RalewaySemiBold;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li:nth-child(1) a
+/* Selecionar apenas o elemento de número 1, no caso, "Home" */
+
+    {
+    color: #49af67;
+    padding-left: 15px;
+    background-image: url(../imagens/seta-menu-ativo.png);
+    background-repeat: no-repeat;
+    cursor: default;
+}
+
+.menu-icone {
+    display: none;
+    font-size: 24px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+.menu-icone a {
+    color: white;
+}
+
+i {
+    font-family: RalewaySemiBoldItalic;
+}
+
+b {
+    font-family: RalewayBold;
+}
+
+.fundo-banner
+/* Criação da DIV englobando o banner e conteúdo para atender o que foi desenvolvido pelo o designer */
+
+    {
+    background-image: url('../imagens/banner.png'), linear-gradient(#000026, #000026);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.banner {
+    width: 100%;
+    min-height: 500px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-family: RalewayBold;
+    font-size: 60px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.banner .texto {
+    font-family: RalewayRegular;
+    font-size: 28px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.banner-slides {
+    position: relative;
+}
+
+.banner-descricao {
+    width: 100%;
+    max-width: 1190px;
+    margin: auto;
+    min-height: 700px;
+}
+
+.slides {
+    display: none
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border: 1px solid #49ae6c;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #eeeeee;
+}
+
+.banner-metade {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.banner-imagem {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.botao-banner-link {
+    display: block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #49ae6c;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.conteudo-banner {
+    width: 100%;
+    max-width: 1190px;
+    margin: auto;
+    min-height: 700px;
+}
+
+.conteudo-banner .banner-metade {
+    margin-top: 70px;
+}
+
+.letra-verde {
+    font-family: RalewaySemiBold;
+    font-size: 36px;
+    color: #26ae4e;
+    float: left;
+    width: 50%;
+}
+
+.conteudo-consultoria:nth-last-of-type(1) p {
+    margin-top: 0;
+}
+
+.imagem-grafico {
+    float: left;
+    max-width: 50%;
+}
+
+.texto-conteudo {
+    clear: both;
+    font-size: 18px;
+    padding-top: 20px;
+    font-family: RalewayRegular;
+    color: white;
+}
+
+.imagem-responsiva {
+    max-width: 25%;
+    height: auto;
+    float: left;
+    padding-right: 30px;
+}
+
+.descricao-texto {
+    color: white;
+    font-size: 18px;
+    font-family: RalewayRegular;
+}
+
+.conteudo-direito {
+    width: 100%;
+    min-height: 220px;
+}
+
+.conteudo-direito .titulo {
+    color: white;
+    font-size: 20px;
+    font-family: RalewaySemiBold;
+}
+
+.conteudo-direito a {
+    text-decoration: none;
+}
+
+.conteudo-direito .texto-verde {
+    color: white;
+    font-size: 20px;
+    font-family: RalewaySemiBold;
+}
+
+.conteudo-direito .texto-verde-1 {
+    color: white;
+    font-size: 20px;
+    font-family: RalewaySemiBold;
+    float: left;
+}
+
+.conteudo-direito .texto-verde-2 {
+    color: white;
+    font-size: 20px;
+    font-family: RalewaySemiBold;
+    float: right;
+}
+
+.conteudo-direito span {
+    color: #26ae4e;
+}
+
+.conteudo-consultoria {
+    float: left;
+    max-width: 70%;
+}
+
+/*VF EM NUMEROS*/
+
+.fundo-branco {
+    width: 100%;
+    min-height: 350px;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+.recipiente-vf-numeros {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.imagem-posicao {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.vf-em-numeros {
+    text-align: center;
+    font-size: 36px;
+    font-family: RalewaySemiBold;
+    color: #26ae4e;
+}
+
+.imagem-anos {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    padding-right: 10px;
+}
+
+.numero-azul {
+    color: #12103e;
+    font-size: 60px;
+    font-family: RalewaySemiBold;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.texto-azul {
+    color: #035f9a;
+    font-size: 18px;
+}
+
+.lado-azul {
+    width: 50%;
+    background-color: #037a9a;
+    height: 7px;
+    float: left;
+}
+
+.lado-verde {
+    width: 50%;
+    background-color: #4cb06a;
+    height: 7px;
+    float: left;
+}
+
+/* RESULTADOS */
+
+.resultados {
+    width: 100%;
+    min-height: 700px;
+    background-color: #131141;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.recipiente-resultados {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.titulo-resultados {
+    color: white;
+    font-size: 36px;
+    font-family: RalewaySemiBold;
+    text-align: center;
+}
+
+.texto-resultados {
+    color: white;
+    font-size: 18px;
+    font-family: RalewayRegular;
+    text-align: left;
+}
+
+.conteudo-texto-resultados {
+    width: 950px;
+    margin: auto;
+}
+
+.conheca-cases {
+    color: white;
+    font-size: 18px;
+    font-family: RalewayRegular;
+    text-align: center;
+    border-bottom: 3px solid #26ae4e;
+    width: 220px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-bottom: 7px;
+}
+
+.recipiente-resultados iframe {
+    max-width: 420px;
+    width: 100%;
+    min-height: 230px;
+    height: 100%;
+}
+
+.video-youtube {
+    float: left;
+    max-width: 50%;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.botao-resultados {
+    display: block;
+    width: 270px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #49ae6c;
+    border-radius: 10px;
+    margin-top: 35px !important;
+    margin: auto;
+}
+
+/* Parceiros */
+
+.parceiros {
+    width: 100%;
+    min-height: 300px;
+    background-color: #020029;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.titulo-parceiros {
+    color: white;
+    font-size: 36px;
+    font-family: RalewaySemiBold;
+    text-align: center;
+}
+
+.fundo-carousel {
+    background-color: #020029;
+    text-align: center;
+    margin: auto;
+    min-height: 150px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.recipiente-parceiros {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+}
+
+/*Setas do carrossel*/
+
+.seta_direita {
+    color: white;
+    margin-left: 20px;
+}
+
+.seta_esquerda {
+    color: white;
+    margin-right: 20px;
+}
+
+/*Setas do carrossel*/
+
+/* Conquiste Resultados */
+
+.conquiste {
+    width: 100%;
+    min-height: 500px;
+    background-image: linear-gradient(#019665, #05ae59);
+    box-sizing: border-box;
+}
+
+.recipiente-conquiste {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+}
+
+.conquiste-lado-esquerdo {
+    max-width: 50%;
+    width: 100%;
+    float: left;
+}
+
+.conquiste-lado-direito {
+    max-width: 50%;
+    width: 100%;
+    float: left;
+}
+
+.titulo-conquiste {
+    color: white;
+    font-size: 36px;
+    font-family: RalewaySemiBold;
+    text-align: left;
+    width: 270px;
+}
+
+.texto-conquiste {
+    color: white;
+    font-size: 20px;
+    font-family: RalewayBold;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-left: 3px solid #02163e;
+    width: 370px;
+    height: 100px;
+}
+
+.texto-conquiste-2 {
+    color: white;
+    font-size: 20px;
+    font-family: RalewayBold;
+    width: 50%;
+    float: left;
+    padding-top: 40px;
+}
+
+.texto-conquiste-3 {
+    margin: 0;
+    padding-left: 25px;
+    margin-top: -25px;
+}
+
+.chart-grafico {
+    clear: both;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+}
+
+.chart-grafico img {
+    width: 80%;
+    height: auto;
+}
+
+.botao-conquiste {
+    display: block;
+    width: 270px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    background-color: #02163e;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+/* Agenda */
+
+.agenda {
+    width: 100%;
+    max-width: 1190px;
+    padding-top: 50px;
+    margin: auto;
+    min-height: 400px;
+}
+
+.agenda-lado-esquerdo {
+    width: 35%;
+    float: left;
+}
+
+.agenda-lado-direito {
+    float: left;
+    width: 65%;
+    height: 100px;
+}
+
+.agenda-lado-esquerdo object {
+    float: left;
+}
+
+.titulo-agenda {
+    float: left;
+    color: #40a772;
+    font-size: 36px;
+    font-family: RalewaySemiBold;
+    padding-right: 15%;
+}
+
+.texto-agenda {
+    clear: both;
+    color: white;
+    font-size: 18px;
+    font-family: RalewayRegular;
+    max-width: 300px;
+    padding-top: 30px;
+}
+
+.botao-veja-agenda {
+    display: block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #4cb06a;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.divisao-agenda {
+    width: 50%;
+    float: left;
+}
+
+.agenda-menor-1, .agenda-menor-2, .agenda-menor-3, .agenda-menor-4 {
+    border: 2px solid #49ae6c;
+    border-radius: 10px;
+    max-width: 285px;
+    height: 160px;
+    color: white;
+    font-size: 20px;
+    font-family: RalewaySemiBold;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.agenda-menor-3, .agenda-menor-4 {
+    margin-top: 20px;
+}
+
+.agenda-texto-verde {
+    color: #49ae6c;
+}
+
+.agenda-texto-verde-data {
+    color: #49ae6c;
+    font-size: 18px;
+}
+
+.agenda-menor-1 p, .agenda-menor-2 p, .agenda-menor-3 p, .agenda-menor-4 p {
+    margin: 0;
+    padding-left: 18px;
+    margin-top: -26px;
+}
+
+.botao-saiba-mais {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(#49ae6c, #067c98);
+    border-radius: 7px;
+    position: relative;
+    left: 168px;
+    top: 18px;
+}
+
+/* Newsletter */
+.newsletter{
+    clear: both;
+    width: 100%;
+    max-width: 1190px;
+    padding-top: 50px;
+    margin: auto;
+    min-height: 400px;
+}
+
+.titulo-newsletter{ 
+    color: white;
+    font-size: 36px;
+    font-family: RalewaySemiBold;
+    text-align: center;
+}
+
+.texto-newsletter{
+    color: white;
+    font-size: 18px;
+    font-family: RalewayRegular;
+}
+
+.newsletter-enviar{
+    max-width: 1070px;
+    margin: auto;
+}
+
+.newsletter-enviar input{
+    height: 60px;
+    color: white;
+    background-color: #02002d;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    border: 0;
+    margin-top: 20px;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+#botao-enviar{
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #4cb06a;
+    width: 150px;
+    text-align: center;
+}
+
+#email{
+    width: 530px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#nome{
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin-right: 5px;
+}
+
+.mensagem{
+    margin-top: 70px;
+    color: white;
+    font-family: RalewayRegular;
+    font-size: 22px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.mensagem p{
+    margin: 0;
+    width: 70%;
+    margin: auto;
+}
+
+.aspas-esquerdo{
+    float: left;
+    margin-left: 130px;
+    margin-top: -8px;
+}
+
+.aspas-direito{
+    float: right;
+    margin-right: 120px;
+    margin-top: -60px;
+}
+
+.autor{
+    color: white;
+    font-family: RalewayItalic;
+    font-size: 18px;
+    float: right;
+    padding-top: 20px;
+}
+
+/*RODAPE*/
+
+.rodape {
+    width: 100%;
+    min-height: 1550px;
+    background-image: url("../imagens/textura.png"), linear-gradient(#020a3a, #037a9a);
+    /* W3C */
+}
+
+.rodape-escuro {
+    width: 100%;
+    min-height: 75px;
+    background-color: #100f39;
+}
+
+.contato-geral {
+    max-width: 860px;
+    min-height: 300px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.contato-icone {
+    float: left;
+    margin-left: 20px;
+}
+
+.contato-texto-icone {
+    float: left;
+    margin-left: 170px;
+    padding-top: 50px;
+}
+
+.contato-texto {
+    width: 100%;
+    max-width: 400px;
+    font-family: RalewayBold;
+    font-size: 20px;
+    color: white;
+}
+
+.contato-link {
+    display: block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #4cb06a;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.divisoria {
+    margin: auto;
+    width: 100%;
+    max-width: 1190px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.rodape-recipiente {
+    margin: auto;
+    width: 100%;
+    max-width: 1190px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.rodape-parte-institucional {
+    float: left;
+    width: 33.3%;
+    min-height: 350px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 100px;
+    font-family: RalewayRegular;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+}
+
+.rodape-parte-links {
+    float: left;
+    width: 33.3%;
+    min-height: 350px;
+}
+
+.rodape-parte-contato {
+    float: left;
+    width: 33.4%;
+    min-height: 350px;
+}
+
+.conheca-a-vf-link {
+    display: block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.rodape-parte-links h3 {
+    font-family: RalewayBold;
+    font-size: 18px;
+    color: #49ae6c;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.rodape-parte-links ul {
+    font-family: RalewayItalic;
+    font-size: 18px;
+    color: #49ae6c;
+    list-style: none;
+    line-height: 50px;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.rodape-parte-links a {
+    font-family: RalewayItalic;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.rodape-parte-links table {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.como-chegar-link {
+    display: block;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    margin-top: 44px;
+    margin-left: 20px;
+}
+
+.rodape-parte-contato h3 {
+    font-family: RalewayBold;
+    font-size: 18px;
+    color: #49ae6c;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.rodape-parte-contato p {
+    font-family: RalewayRegular;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 35px;
+    line-height: 23px;
+}
+
+.rodape-escuro span {
+    float: left;
+    padding-left: 20px;
+    font-family: Verdana;
+    color: white;
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+.rodape-escuro a {
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+    /* diminuindo fonte do menu */
+    .menu ul li a {
+        font-size: 14px;
+    }
+    /* diminuindo espaçamento lateral esquerdo */
+    .logo {
+        margin-left: 30px;
+    }
+    /* diminuindo espaçamento lateral direito */
+    .menu {
+        margin-right: 30px;
+    }
+    /* diminuindo espaçamento entre os itens do menu */
+    .menu ul li:nth-child(-n+6)/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+        {
+        margin-right: 35px;
+    }
+    .imagem-posicao, .banner, .recipiente-resultados, .recipiente-parceiros, .recipiente-conquiste, .agenda, .newsletter{
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    /* diminuindo fonte do menu */
+    .menu ul li a {
+        font-size: 12px;
+    }
+    .imagem-responsiva {
+        padding-right: 20px;
+    }
+    .banner-descricao {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* VF Numeros */
+    .numero-azul {
+        font-size: 54px;
+    }
+    .rodape {
+        min-height: 1550px;
+    }
+
+    .aspas-direito {
+    margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-right: 70px;
+        padding-top: 115px;
+        padding-bottom: 30px;
+    }
+    .menu ul li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-icone {
+        display: block;
+    }
+    .topo {
+        line-height: 40px;
+    }
+    /* aumentando fonte do menu */
+    .menu ul li a {
+        font-size: 16px;
+    }
+    /* zerando esse item por ter sido atribuido no media 1280 */
+    .menu ul li:nth-child(-n+6)/* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+        {
+        margin-right: 0px;
+    }
+    .banner h1 {
+        font-size: 46px;
+    }
+    .banner .texto {
+        font-size: 20px;
+    }
+    .banner-descricao {
+        min-height: 600px;
+    }
+    .letra-verde {
+        font-size: 30px;
+    }
+    .imagem-responsiva {
+        max-width: 20%;
+        padding-right: 20px;
+    }
+    .conteudo-direito .titulo, .conteudo-direito .texto-verde {
+        font-size: 18px;
+    }
+    .descricao-texto, .texto-conteudo {
+        font-size: 16px;
+    }
+    /* VF Numeros */
+    .vf-em-numeros {
+        font-size: 30px;
+    }
+    .numero-azul {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    /* Agenda */
+    .agenda-lado-esquerdo, .agenda-lado-direito {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .titulo-agenda {
+        margin-left: 30%;
+    }
+    .texto-agenda, .botao-veja-agenda {
+        margin: auto;
+    }
+    .agenda-menor-1, .agenda-menor-2, .agenda-menor-3, .agenda-menor-4 {
+        margin: auto;
+        margin-top: 30px;
+    }
+    .rodape-parte-institucional {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .rodape-parte-links {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .rodape-parte-contato {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .logo-rodape {
+        display: block;
+        margin: auto;
+    }
+    .rodape-parte-institucional p {
+        text-align: justify;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .conheca-a-vf-link {
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .rodape-parte-links h3 {
+        display: block;
+        text-align: center;
+        margin-top: 80px;
+        font-size: 24px;
+        padding-left: 0;
+    }
+    .rodape-parte-links ul {
+        display: block;
+        margin: auto;
+        padding-left: 0;
+    }
+    .rodape-parte-links table {
+        display: block;
+        margin: auto;
+        width: 230px;
+    }
+    .rodape-parte-contato h3 {
+        display: block;
+        text-align: center;
+        margin-top: 80px;
+        font-size: 24px;
+        padding-left: 0;
+    }
+    .rodape-parte-contato p {
+        text-align: center;
+        padding-left: 0;
+    }
+    .como-chegar-link {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .numero-azul {
+        font-size: 40px;
+    }
+    /* Resultados */
+    .conteudo-texto-resultados {
+        width: 100%;
+    }
+    .resultados {
+        padding-bottom: 90px;
+    }
+    .texto-resultados {
+        font-size: 16px;
+        text-align: center;
+    }
+    .video-youtube {
+        display: block;
+        float: none;
+        max-width: 80%;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .titulo-conquiste {
+        font-size: 30px;
+    }
+    .texto-conquiste-2 {
+        font-size: 16px;
+    }
+
+    /* Newsletter */
+
+    #nome, #email{
+        width: 100%;
+    }
+    .mensagem{
+        font-size: 18px;
+    }
+
+    .aspas-esquerdo {
+        margin-left: 90px;
+    }
+
+    .aspas-direito {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 40px;
+        box-sizing: border-box;
+        padding-bottom: 0;
+        padding-top: 70px;
+    }
+    .banner-descricao {
+        min-height: 650px;
+    }
+    .conteudo-banner {
+        padding-bottom: 80px;
+    }
+    .banner-imagem {
+        width: 100%;
+    }
+    .banner-metade {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .botao-banner-link {
+        margin: auto;
+        margin-top: 50px;
+    }
+    .imagem-grafico, .imagem-responsiva {
+        float: none;
+        padding: 0;
+    }
+    .letra-verde {
+        float: none;
+        width: 100%;
+    }
+    .conteudo-consultoria {
+        float: none;
+        display: block;
+        max-width: 500px;
+        margin: auto;
+    }
+    .conteudo-direito {
+        min-height: 280px;
+    }
+    .conteudo-direito .texto-verde-1, .conteudo-direito .texto-verde-2 {
+        float: none;
+        display: block;
+    }
+    /* VF Numeros */
+    .numero-azul {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .recipiente-vf-numeros {
+        padding-top: 0px;
+    }
+    .imagem-anos {
+        position: relative;
+        padding: 0;
+        transform: translate(-50%, -21%);
+        left: 50%;
+        width: 30%;
+        top: 0;
+    }
+    /* Conquiste  */
+    .recipiente-conquiste {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .texto-conquiste {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+    .titulo-conquiste {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+    .conquiste-lado-esquerdo {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        max-width: none;
+    }
+    .conquiste-lado-direito {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        max-width: none;
+    }
+    .texto-conquiste-2 {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: auto;
+        width: 100%;
+    }
+    .chart-grafico {
+        padding-left: 0;
+    }
+    .botao-conquiste {
+        margin-top: 30px !important;
+        margin: auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 60px;
+    }
+    /* Agenda */
+    .agenda {
+        padding-bottom: 630px;
+    }
+    .titulo-agenda {
+        margin-left: 23%
+    }
+    .divisao-agenda {
+        float: none;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        width: 285px;
+    }
+
+    .mensagem p
+    {
+        width: 85%;
+    }
+
+    .mensagem {
+        padding-bottom: 40px;
+        
+    }
+
+    .autor{
+        float: none;
+        display: block;
+    }
+
+    .aspas-esquerdo {
+        margin-left: 0;
+    }
+
+    .divisoria {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rodape-escuro {
+        text-align: center;
+    }
+    .rodape-escuro span {
+        float: none;
+        display: block;
+        padding-right: 20px;
+    }
+    .rodape-escuro a {
+        float: none;
+        display: block;
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+    .titulo-resultados, .titulo-parceiros {
+        font-size: 28px;
+    }
+    .agenda-lado-esquerdo object {
+        float: none;
+        margin-top: 20px;
+    }
+    .titulo-agenda {
+        float: none;
+        margin: auto;
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .agenda-lado-esquerdo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .banner h1 {
+        padding-top: 90px;
+    }
+    .botao-resultados {
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+    }
+    .texto-agenda{
+        font-size: 14px;
+    }
+    .agenda-menor-1, .agenda-menor-2, .agenda-menor-3, .agenda-menor-4{
+        font-size: 18px;
+    }
+    .agenda-texto-verde-data{
+        font-size: 16px;
+    }
+
+    .botao-saiba-mais{
+        top: 31px;
+    }
+
+    .mensagem{
+        font-size: 16px;
+    }
+    .autor{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 360px) {
+    .informativo {
+        height: 460px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        width: 160px;
+    }
+    .botao-saiba-mais {
+        left: 163px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .botao-saiba-mais {
+        left: 123px;
+    }
+}

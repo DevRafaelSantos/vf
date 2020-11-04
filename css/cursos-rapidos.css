@@ -1,0 +1,956 @@
+body
+{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face 
+{
+	font-family: RalewaySemiBold;
+	src: url(../fontes/Raleway-SemiBold.ttf);
+}
+
+@font-face 
+{
+	font-family: RalewayBold;
+	src: url(../fontes/Raleway-Bold.ttf);
+}
+
+@font-face 
+{
+	font-family: RalewayRegular;
+	src: url(../fontes/Raleway-Regular.ttf);
+}
+
+@font-face 
+{
+	font-family: RalewayItalic;
+	src: url(../fontes/Raleway-Italic.ttf);
+}
+
+.recipiente
+{
+	width: 100%;
+	max-width: 1366px;
+	margin: auto;
+}
+
+.topo
+{
+	width: 100%;
+	min-height: 115px;
+	background-color: #020031;
+	line-height: 115px;
+}
+
+.logo
+{
+	margin-top: 18px;
+	margin-left: 70px;
+	float: left;
+}
+
+.menu
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 70px;
+}
+
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+{
+	margin-right: 43px;
+}
+
+.menu ul li a
+{
+	color: #FFF;
+	font-family: RalewaySemiBold;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li:nth-child(4) a /* Selecionar apenas o elemento de número 4, no caso, "Para profissionais" */
+{
+	color: #49af67;
+	padding-left: 15px;
+	background-image: url(../imagens/seta-menu-ativo.png);
+	background-repeat: no-repeat;
+	cursor: default;
+}
+
+.menu-icone
+{
+	display: none;
+	font-size: 24px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 40px;
+}
+
+.menu-icone a
+{
+	color: white;
+}
+
+.banner
+{
+	width: 100%;
+	min-height: 607px;
+	padding: 0;
+	margin: 0;
+	background-image: url('../imagens/banner-cursos-rapidos.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	text-align: center;
+}
+
+.banner h1
+{
+	font-family: RalewayBold;
+	font-size: 60px;
+	color: white;
+	padding: 0;
+	margin: 0;
+	padding-top: 100px;
+}
+
+.banner h2
+{
+	font-family: RalewaySemiBold;
+	font-size: 36px;
+	color: #26ae4e;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.banner-descricao
+{
+	margin: auto;
+	width: 100%;
+	max-width: 500px;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	padding-top: 20px;
+}
+
+.banner-icone-texto
+{
+	margin: auto;
+	width: 100%;
+	max-width: 520px;
+	height: auto;
+	padding-top: 70px;
+}
+
+.banner-icone
+{
+	float: left;
+}
+
+.banner-texto
+{
+	float: right;
+	width: 100%;
+	max-width: 380px;
+	height: auto;
+	font-family: RalewaySemiBold;
+	font-size: 22px;
+	text-align: left;
+	color: white;
+	padding-top: 20px;
+}
+
+.imagem-responsiva
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.caracteristicas-cursos
+{
+	width: 100%;
+	min-height: 355px;
+	background-image: url(../imagens/fundo-caracteristicas.png);
+}
+
+.caracteristicas-cursos h1
+{
+	padding: 0;
+	margin: 0;
+	padding-top: 60px;
+	font-family: RalewayBold;
+	font-size: 18px; 
+	color: white;
+	text-align: center;
+}
+
+.caracteristicas-tabela-esquerda
+{
+	float: left;
+	width: 50%;
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	margin-top: 60px;
+	padding-left: 50px; 
+}
+
+.caracteristicas-tabela-esquerda tr
+{
+	height: 35px;
+}
+
+.caracteristicas-tabela-direita
+{
+	float: right;
+	width: 50%;
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	margin-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.caracteristicas-tabela-direita tr
+{
+	height: 35px;
+}
+
+.cursos-rapidos
+{
+	width: 100%;
+	min-height: 900px;
+	background-color: #02002a;
+	box-sizing: border-box;
+	padding-bottom: 40px;
+}
+
+.cursos-rapidos h1
+{
+	font-family: RalewayBold;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 50px;
+	margin: 0;
+}
+
+.recipiente-accordion
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1090px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 2px solid #4cb06a;
+	border-radius: 20px;
+}
+
+#accordion h3
+{
+	color: #4cb06a;
+	font-family: RalewaySemiBold;
+	font-size: 20px;
+	border-bottom: 1px solid #666;
+	cursor: pointer;
+	padding-left: 0px;
+	padding-bottom: 15px;
+	margin-left: 0;
+	/*background-image: url('../imagens/seta-branca.png');*/
+	background-repeat: no-repeat;
+	background-color: #02002a;
+	background-position: left;
+	border: none;
+}
+
+#accordion p
+{
+	color: white;
+	font-family: RalewayRegular;
+	font-size: 18px;
+}
+
+#accordion span
+{
+	color: #4cb06a;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	font-style: italic;
+}
+
+#accordion div
+{
+	border: none;
+	border-bottom: 1px solid #666;
+	height: auto !important;
+	border-radius: 0;
+}
+
+.rodape
+{
+	width: 100%;
+	min-height: 957px;
+	background-image: url("../imagens/textura.png"), linear-gradient(#02002a, #037a9a); /* W3C */
+}
+
+.rodape-escuro
+{
+	width: 100%;
+	min-height: 75px;
+	background-color: #100f39;
+}
+
+.contato-geral
+{
+	max-width: 860px;
+	min-height: 300px;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.contato-icone
+{
+	float: left;
+	margin-left: 20px;
+}
+
+.contato-texto-icone
+{
+	float: left;
+	margin-left: 170px;
+	padding-top: 50px;
+}
+
+.contato-texto
+{
+	width: 100%;
+	max-width: 400px;
+	font-family: RalewayBold;
+	font-size: 20px;
+	color: white;
+}
+
+.contato-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #4cb06a;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.divisoria
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1190px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.rodape-recipiente
+{
+	margin: auto;
+	width: 100%;
+	max-width: 1190px;
+	height: auto;
+	margin-top: 40px;
+}
+
+.rodape-parte-institucional
+{
+	float: left;
+	width: 33.3%;
+	min-height: 350px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 100px;
+	font-family: RalewayRegular;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+}
+
+.rodape-parte-links
+{
+	float: left;
+	width: 33.3%;
+	min-height: 350px;
+}
+
+.rodape-parte-contato
+{
+	float: left;
+	width: 33.4%;
+	min-height: 350px;
+}
+
+.conheca-a-vf-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.rodape-parte-links h3
+{
+	font-family: RalewayBold;
+	font-size: 18px;
+	color: #49ae6c;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.rodape-parte-links ul
+{
+	font-family: RalewayItalic;
+	font-size: 18px;
+	color: #49ae6c;
+	list-style: none;
+	line-height: 50px;
+	padding: 0;
+	padding-left: 20px;
+	padding-top: 25px;
+}
+
+.rodape-parte-links a
+{
+	font-family: RalewayItalic;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.rodape-parte-links table
+{
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.como-chegar-link
+{
+	display: block;
+	width: 200px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	margin-top: 44px;
+	margin-left: 20px;
+}
+
+.rodape-parte-contato h3
+{
+	font-family: RalewayBold;
+	font-size: 18px;
+	color: #49ae6c;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.rodape-parte-contato p
+{
+	font-family: RalewayRegular;
+	font-size: 18px;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-top: 35px;
+	line-height: 23px;
+}
+
+.rodape-escuro span
+{
+	float: left;
+	padding-left: 20px;
+	font-family: Verdana;
+	color: white;
+	font-size: 12px;
+	padding-top: 30px;
+}
+
+.rodape-escuro a
+{
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 1280px) 
+{
+	/* diminuindo fonte do menu */
+	.menu ul li a
+	{
+		font-size: 14px;
+	}
+
+	/* diminuindo espaçamento lateral esquerdo */
+	.logo
+	{
+		margin-left: 30px;
+	}
+
+	/* diminuindo espaçamento lateral direito */
+	.menu
+	{
+		margin-right: 30px;
+	}
+
+	/* diminuindo espaçamento entre os itens do menu */
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+	{
+		margin-right: 35px;
+	}
+}
+
+@media screen and (max-width: 1152px) 
+{
+	/* diminuindo fonte do menu */
+	.menu ul li a
+	{
+		font-size: 12px;
+	}
+
+	.rodape
+	{
+		min-height: 987px;
+	}
+}
+
+@media screen and (max-width: 1024px) 
+{
+	.menu
+	{
+		display: none;
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		margin-right: 70px;
+		padding-top: 115px;
+		padding-bottom: 30px;
+	}
+
+	.menu ul li
+	{
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu-icone
+	{
+		display: block;
+	}
+
+	.topo
+	{
+		line-height: 40px;
+	}
+
+	/* aumentando fonte do menu */
+	.menu ul li a
+	{
+		font-size: 16px;
+	}
+
+	/* zerando esse item por ter sido atribuido no media 1280 */
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+	{
+		margin-right: 0px;
+	}
+
+	.banner-icone-texto
+	{
+		width: 380px;
+		box-sizing: border-box;
+		padding: 20px;
+		padding-top: 40px;
+	}
+
+	.banner-texto
+	{
+		width: 200px;
+		font-size: 16px;
+		box-sizing: border-box;
+		padding-left: 20px;
+	}
+
+	.caracteristicas-tabela-esquerda
+	{
+		float: none;
+		font-size: 14px;
+		margin: auto;
+		margin-top: 30px;
+		padding-left: 0;
+	}
+
+	.caracteristicas-tabela-direita
+	{
+		float: none;
+		margin-top: 0;
+		font-size: 14px;
+		margin: auto;
+		padding-left: 0;
+	}
+
+	.caracteristicas-tabela-esquerda tr
+	{
+		height: 25px;
+	}
+
+	.caracteristicas-tabela-direita tr
+	{
+		height: 25px;
+	}
+
+	.caracteristicas-cursos h1
+	{
+		box-sizing: border-box;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 40px;
+	}
+
+	.contato-texto-icone
+	{
+		margin-left: 90px;
+		padding-top: 25px;
+	}
+
+	.contato-icone
+	{
+		width: 200px;
+		height: 200px;
+	}
+
+	.contato-geral
+	{
+		max-width: 710px;
+	}
+
+	.rodape-parte-institucional
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 0;
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 30px;
+	}
+
+	.rodape-parte-links
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.rodape-parte-contato
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-bottom: 50px;
+	}
+
+	.logo-rodape
+	{
+		display: block;
+		margin: auto;
+	}
+
+	.rodape-parte-institucional p
+	{
+		text-align: justify;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.conheca-a-vf-link 
+	{
+	    display: block;
+	    margin: auto;
+	    margin-top: 40px;
+	}
+
+	.rodape-parte-links h3
+	{
+		display: block;
+		text-align: center;
+		margin-top: 80px;
+		font-size: 24px;
+		padding-left: 0;
+	}
+
+	.rodape-parte-links ul
+	{
+		display: block;
+		margin: auto;
+		padding-left: 0;
+	}
+
+	.rodape-parte-links table
+	{
+		display: block;
+		margin: auto;
+		width: 230px;
+	}
+
+	.rodape-parte-contato h3
+	{
+		display: block;
+		text-align: center;
+		margin-top: 80px;
+		font-size: 24px;
+		padding-left: 0;
+	}
+
+	.rodape-parte-contato p
+	{
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.como-chegar-link
+	{
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 768px) 
+{
+	.banner h1
+	{
+		font-size: 40px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 150px;
+	}
+
+	.banner h2
+	{
+		font-size: 24px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.banner-descricao
+	{
+		font-size: 16px;
+		box-sizing: border-box;
+		padding: 50px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.caracteristicas-tabela-esquerda
+	{
+		width: 85%;
+		margin-top: 30px;
+	}
+
+	.caracteristicas-tabela-direita
+	{
+		width: 85%;
+	}
+
+	.caracteristicas-cursos h1
+	{
+		padding-top: 30px;
+	}
+
+	.contato-icone
+	{
+		float: none;
+		display: block;
+		margin: auto;
+	}
+
+	.contato-texto-icone
+	{
+		float: none;
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.contato-texto
+	{
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 50px;
+	}
+
+	.contato-link
+	{
+		margin: auto;
+	}
+
+	.divisoria
+	{
+		padding-top: 30px;
+	}
+
+	#accordion h3
+	{
+		font-size: 14px;
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 600px) 
+{
+	.rodape-escuro
+	{
+		text-align: center;
+	}
+
+	.rodape-escuro span
+	{
+		float: none;
+		display: block;
+		padding-right: 20px;
+	}
+
+	.rodape-escuro a
+	{
+		float: none;
+		display: block;
+		padding-bottom: 20px;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 414px) 
+{
+	.caracteristicas-tabela-esquerda
+	{
+		width: 90%;
+		margin-top: 20px;
+	}
+
+	.caracteristicas-tabela-direita
+	{
+		width: 90%;
+	}
+
+	.banner h1
+	{
+		padding-top: 90px;
+	}
+}
+
+@media screen and (max-width: 375px) 
+{
+	.banner-icone-texto
+	{
+		width: 375px;
+	}
+
+	.banner-texto
+	{
+		width: 195px;
+	}
+
+	.caracteristicas-cursos h1
+	{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 360px) 
+{
+	.banner-icone-texto
+	{
+		width: 360px;
+	}
+
+	.banner-texto
+	{
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 320px) 
+{
+	.banner-icone-texto
+	{
+		width: 320px;
+	}
+
+	.banner-texto
+	{
+		width: 140px;
+		font-size: 12px;
+	}
+
+	.caracteristicas-tabela-esquerda
+	{
+		font-size: 12px;
+	}
+
+	.caracteristicas-tabela-direita
+	{
+		font-size: 12px;
+	}
+}

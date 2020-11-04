@@ -1,0 +1,2620 @@
+body
+
+{
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+
+
+
+
+/*Fontes */
+
+@font-face 
+
+{
+
+	font-family: RalewaySemiBold;
+
+	src: url(../fontes/Raleway-SemiBold.ttf);
+
+}
+
+
+
+@font-face 
+
+{
+
+	font-family: RalewayBold;
+
+	src: url(../fontes/Raleway-Bold.ttf);
+
+}
+
+
+
+@font-face 
+
+{
+
+	font-family: RalewayRegular;
+
+	src: url(../fontes/Raleway-Regular.ttf);
+
+}
+
+
+
+@font-face 
+
+{
+
+	font-family: RalewayItalic;
+
+	src: url(../fontes/Raleway-Italic.ttf);
+
+}
+
+/*Fontes */
+
+
+
+
+
+.recipiente
+
+{
+
+	width: 100%;
+
+	max-width: 1366px;
+
+	margin: auto;
+
+}
+
+
+
+
+
+/*Começo do menu*/
+
+
+
+.topo
+
+{
+
+	width: 100%;
+
+	min-height: 115px;
+
+	background-color: #020031;
+
+	line-height: 115px;
+
+}
+
+
+
+.logo
+
+{
+
+	margin-top: 18px;
+
+	margin-left: 70px;
+
+	float: left;
+
+}
+
+
+
+.menu
+
+{
+
+	float: right;
+
+	margin: 0;
+
+	padding: 0;
+
+	margin-right: 70px;
+
+}
+
+
+
+.menu ul
+
+{
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li
+
+{
+
+	display: inline;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+{
+
+	margin-right: 43px;
+
+}
+
+
+
+.menu ul li a
+
+{
+
+	color: #FFF;
+
+	font-family: RalewaySemiBold;
+
+	font-size: 16px;
+
+	text-decoration: none;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.menu ul li:nth-child(4) a /* Selecionar apenas o elemento de número 4, no caso, "Para profissionais" */
+
+{
+
+	color: #49af67;
+
+	padding-left: 15px;
+
+	background-image: url(../imagens/seta-menu-ativo.png);
+
+	background-repeat: no-repeat;
+
+	cursor: default;
+
+}
+
+
+
+.menu-icone
+
+{
+
+	display: none;
+
+	font-size: 24px;
+
+	float: right;
+
+	margin-right: 30px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.menu-icone a
+
+{
+
+	color: white;
+
+}
+
+/*Fim do menu*/
+
+
+
+
+
+.fundo-banner
+
+{
+
+	background-image: url('../imagens/banner.png'), linear-gradient(#000026, #000026);
+
+	background-repeat: no-repeat;
+
+	background-position: center top;
+
+}
+
+
+
+
+
+/*Começo do banner*/
+
+.banner
+
+{
+
+	width: 100%;
+
+	min-height: 771px;
+
+	padding: 0;
+
+	margin: 0;
+
+	text-align: center;
+
+}
+
+
+
+.banner h1
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 70px;
+
+	color: white;
+
+	padding: 0;
+
+	margin: 0;
+
+	padding-top: 150px;
+
+}
+
+
+
+.banner h2
+
+{
+
+	font-family: RalewaySemiBold;
+
+	font-size: 36px;
+
+	color: #26ae4e;
+
+	padding: 0;
+
+	margin: 0;
+
+	padding-top: 20px;
+
+}
+
+
+
+.banner-descricao
+
+{
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 500px;
+
+	font-family: RalewayRegular;
+
+	line-height: 22px;
+
+	font-size: 18px;
+
+	color: white;
+
+	padding-top: 30px;
+
+}
+
+
+
+.banner-icone-texto
+
+{
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 520px;
+
+	height: auto;
+
+	padding-top: 30px;
+
+}
+
+
+
+.banner-icone
+
+{
+
+	float: left;
+
+}
+
+
+
+.banner-texto
+
+{
+
+	float: right;
+
+	width: 100%;
+
+	max-width: 380px;
+
+	height: auto;
+
+	font-family: RalewaySemiBold;
+
+	font-size: 22px;
+
+	text-align: left;
+
+	color: white;
+
+	padding-top: 20px;
+
+}
+
+
+
+
+
+/*Codigo modificado*/
+
+
+
+.cor_linha
+
+{
+
+	border-color:  #4e4d6c;
+
+	margin-top: 30px;
+
+}
+
+
+
+#tamanho_personalizado
+
+{
+
+	max-width: 15%;
+
+}
+
+
+
+b
+
+{
+
+	font-family: RalewayBold;
+
+}
+
+
+
+.cartao-texto
+
+{
+
+	float: right;
+
+	width: 100%;
+
+	max-width: 390px;
+
+	height: auto;
+
+	font-family: RalewaySemiBold;
+
+	font-size: 22px;
+
+	text-align: left;
+
+	color: white;
+
+}
+
+
+
+.cartao-texto > p
+
+{
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.botao_arredondado_verde
+
+ {
+
+    user-select: none;
+
+    cursor: pointer;
+
+    border: none;
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+    border: 1px solid #4cb06a;
+
+    max-width: 340px;
+
+    margin-top: 15px;
+
+    font-size: 17px;
+
+    text-align: center;
+
+}
+
+
+
+
+
+.quadrado_beneficios_medio
+
+{
+
+	width: 100%;
+
+	max-width:  15%;
+
+	height: auto;
+
+	display: inline-block;
+
+	margin: 0;
+
+	text-align: center;
+
+	padding: 20px;
+
+	box-sizing: border-box;
+
+}
+
+
+
+.quadrado_beneficios_pequeno
+
+{
+
+	
+
+	max-width: 10%;
+
+	height: auto;
+
+	display: inline-block;
+
+	margin: 0;
+
+	text-align: center;
+
+	padding: 20px;
+
+	box-sizing: border-box;
+
+}
+
+
+
+.quadrado_beneficios_grande
+
+{
+
+	width: 100%;
+
+	max-width: 54%;
+
+	height: auto;
+
+	display: inline-block;
+
+	text-align: justify;
+
+	padding: 15px;
+
+	line-height: 24px;
+
+	box-sizing: border-box;
+
+	padding-right: 20px;
+
+	box-sizing: border-box;
+
+}
+
+
+
+.quadrado_beneficios_grande p
+
+{
+
+	margin-left: 40px;
+
+	max-width: 510px;
+
+}
+
+
+
+.quadrado_beneficios_pequeno p
+
+{
+
+	margin-bottom: 0;
+
+	margin-top: 0;
+
+}
+
+
+
+.quadrado_beneficios_grande p
+
+{
+
+	margin-bottom: 10px;
+
+	margin-top: 0;
+
+}
+
+
+
+.icone_seta_beneficio
+
+{
+
+	display: table;
+
+	text-align: center;
+
+	vertical-align: middle;
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+
+
+
+
+.titulo_beneficio
+
+{
+
+	font-family:  RalewayBold;
+
+	color: #12b242;
+
+	font-size: 19px;
+
+}
+
+
+
+
+
+.texto_beneficio
+
+{
+
+	font-family: RalewayRegular;
+
+	color: #ffffff;
+
+	font-size: 16px;
+
+}
+
+
+
+
+
+.titulo_cartao
+
+{
+
+	font-family: RalewaySemiBold;
+
+	color: #ffffff;
+
+	font-size: 14px;
+
+}
+
+/*Codigo modificado*/
+
+
+
+/*Fim do banner*/
+
+
+
+.imagem-responsiva
+
+{
+
+	max-width: 100%;
+
+	height: auto;
+
+}
+
+
+
+
+
+/*Começo de Beneficio*/
+
+
+
+.beneficio
+
+{
+
+	width: 100%;
+
+	min-height: 900px;
+
+	/*background-color: #02002a;*/
+
+	/*background-image: linear-gradient(#02012d, #02002a);*/
+
+	box-sizing: border-box;
+
+	padding-bottom: 40px;
+
+}
+
+
+
+.titulo_principal_beneficio
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 22px;
+
+	color: white;
+
+	text-align: center;
+
+	display: inline-block;
+
+	width: 100%;
+
+	box-sizing: border-box;
+
+}
+
+
+
+/*Fim de Beneficio*/
+
+
+
+
+
+
+
+/*Começo do rodape*/
+
+.rodape
+
+{
+
+	width: 100%;
+
+	min-height: 675px;
+
+	background-image: url("../imagens/textura.png"), linear-gradient(#02012a, #037a9a); /* W3C */
+
+}
+
+
+
+.rodape-escuro
+
+{
+
+	width: 100%;
+
+	min-height: 75px;
+
+	background-color: #100f39;
+
+}
+
+
+
+.contato-geral
+
+{
+
+	max-width: 860px;
+
+	min-height: 300px;
+
+	margin: auto;
+
+	padding-top: 50px;
+
+}
+
+
+
+.contato-icone
+
+{
+
+	float: left;
+
+	margin-left: 20px;
+
+}
+
+
+
+.contato-texto-icone
+
+{
+
+	float: left;
+
+	margin-left: 170px;
+
+	padding-top: 50px;
+
+}
+
+
+
+.contato-texto
+
+{
+
+	width: 100%;
+
+	max-width: 400px;
+
+	font-family: RalewayBold;
+
+	font-size: 20px;
+
+	color: white;
+
+}
+
+
+
+.contato-link
+
+{
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #4cb06a;
+
+	border-radius: 10px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.divisoria
+
+{
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 1190px;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-right: 20px;
+
+}
+
+
+
+.rodape-recipiente
+
+{
+
+	margin: auto;
+
+	width: 100%;
+
+	max-width: 1190px;
+
+	height: auto;
+
+	margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-institucional
+
+{
+
+	float: left;
+
+	width: 33.3%;
+
+	min-height: 350px;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-right: 100px;
+
+	font-family: RalewayRegular;
+
+	font-size: 16px;
+
+	line-height: 30px;
+
+	color: white;
+
+}
+
+
+
+.rodape-parte-links
+
+{
+
+	float: left;
+
+	width: 33.3%;
+
+	min-height: 350px;
+
+}
+
+
+
+.rodape-parte-contato
+
+{
+
+	float: left;
+
+	width: 33.4%;
+
+	min-height: 350px;
+
+}
+
+
+
+
+
+.conheca-a-vf-link
+
+{
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #FFF;
+
+	border-radius: 10px;
+
+	margin-top: 40px;
+
+}
+
+
+
+.rodape-parte-links h3
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-links ul
+
+{
+
+	font-family: RalewayItalic;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	list-style: none;
+
+	line-height: 50px;
+
+	padding: 0;
+
+	padding-left: 20px;
+
+	padding-top: 25px;
+
+}
+
+
+
+.rodape-parte-links a
+
+{
+
+	font-family: RalewayItalic;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.rodape-parte-links table
+
+{
+
+	margin-top: 25px;
+
+	margin-left: 20px;
+
+}
+
+
+
+.como-chegar-link
+
+{
+
+	display: block;
+
+	width: 200px;
+
+	height: 65px;
+
+	line-height: 65px;
+
+	text-align: center;
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border: 1px solid #FFF;
+
+	border-radius: 10px;
+
+	margin-top: 44px;
+
+	margin-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato h3
+
+{
+
+	font-family: RalewayBold;
+
+	font-size: 18px;
+
+	color: #49ae6c;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+}
+
+
+
+.rodape-parte-contato p
+
+{
+
+	font-family: RalewayRegular;
+
+	font-size: 18px;
+
+	color: white;
+
+	box-sizing: border-box;
+
+	padding-left: 20px;
+
+	padding-top: 35px;
+
+	line-height: 23px;
+
+}
+
+
+
+.rodape-escuro span
+
+{
+
+	float: left;
+
+	padding-left: 20px;
+
+	font-family: Verdana;
+
+	color: white;
+
+	font-size: 12px;
+
+	padding-top: 30px;
+
+}
+
+
+
+.rodape-escuro a
+
+{
+
+	float: right;
+
+	padding-right: 20px;
+
+	padding-top: 20px;
+
+}
+
+
+
+/*Fim do rodape*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) 
+
+{
+
+	/* diminuindo fonte do menu */
+
+	.menu ul li a
+
+	{
+
+		font-size: 14px;
+
+	}
+
+
+
+	/* diminuindo espaçamento lateral esquerdo */
+
+	.logo
+
+	{
+
+		margin-left: 30px;
+
+	}
+
+
+
+	/* diminuindo espaçamento lateral direito */
+
+	.menu
+
+	{
+
+		margin-right: 30px;
+
+	}
+
+
+
+	/* diminuindo espaçamento entre os itens do menu */
+
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+	{
+
+		margin-right: 35px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 1152px) 
+
+{
+
+	/* diminuindo fonte do menu */
+
+	.menu ul li a
+
+	{
+
+		font-size: 12px;
+
+	}
+
+
+
+	.rodape
+
+	{
+
+		min-height: 714px;
+
+	}
+
+
+
+	.icone_pessoa_beneficio
+
+	{
+
+		width: 90px;
+
+	}
+
+
+
+	.icone_seta_beneficio
+
+	{
+
+		width: 27px;
+
+	}
+
+
+
+
+
+	.icone_grupo_pessoas_beneficio
+
+	{
+
+		width: 120px;
+
+	} 
+
+
+
+	.icone_diploma_beneficio
+
+	{
+
+		width: 90px;
+
+	} 
+
+
+
+	.icone_formado_beneficio
+
+	{
+
+		width: 90px;
+
+	}   
+
+
+
+
+
+	.icone_grafico_beneficio
+
+	{
+
+		width: 107px;
+
+	} 
+
+
+
+
+
+	.icone_grafico_duplo_beneficio
+
+	{
+
+		 width: 160px;
+
+	} 
+
+
+
+
+
+	.icone_olho_beneficio
+
+	{
+
+		width: 110px;
+
+	} 
+
+
+
+
+
+	.icone_olho_lupa_beneficio
+
+	{
+
+		width: 140px;
+
+	} 
+
+
+
+	.texto_beneficio 
+
+	{
+
+    	font-size: 16px;
+
+	}
+
+
+
+	.titulo_beneficio {
+
+	    font-size: 19px;
+
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 1024px) 
+
+{
+
+	.menu
+
+	{
+
+		display: none;
+
+		float: none;
+
+		width: 100%;
+
+		text-align: center;
+
+		margin: 0;
+
+		padding: 0;
+
+		margin-right: 70px;
+
+		padding-top: 115px;
+
+		padding-bottom: 30px;
+
+	}
+
+
+
+	.menu ul li
+
+	{
+
+		display: block;
+
+		margin: 0;
+
+		padding: 0;
+
+	}
+
+
+
+	.menu-icone
+
+	{
+
+		display: block;
+
+	}
+
+
+
+	.topo
+
+	{
+
+		line-height: 40px;
+
+	}
+
+
+
+	/* aumentando fonte do menu */
+
+	.menu ul li a
+
+	{
+
+		font-size: 16px;
+
+	}
+
+
+
+	/* zerando esse item por ter sido atribuido no media 1280 */
+
+	.menu ul li:nth-child(-n+6) /* Selecionar os primeiros 6 elementos para aplicar padding right, que faz isso é o nth-child(-n+6) */
+
+	{
+
+		margin-right: 0px;
+
+	}
+
+
+
+	.banner-icone-texto
+
+	{
+
+		width: 580px;
+
+		box-sizing: border-box;
+
+	}
+
+
+
+
+
+	.cartao-texto 
+
+	{
+
+	    font-size: 18px;
+
+	}
+
+	
+
+
+
+
+
+	.botao_arredondado_verde 
+
+	{
+
+		max-width: 295px;
+
+		font-size: 15px
+
+	}
+
+
+
+
+
+	.contato-texto-icone
+
+	{
+
+		margin-left: 90px;
+
+		padding-top: 25px;
+
+	}
+
+
+
+	.contato-icone
+
+	{
+
+		width: 200px;
+
+		height: 200px;
+
+	}
+
+
+
+	.contato-geral
+
+	{
+
+		max-width: 710px;
+
+	}
+
+
+
+	.rodape-parte-institucional
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		min-height: 0;
+
+		padding-right: 0;
+
+		padding-left: 0;
+
+		padding-top: 30px;
+
+	}
+
+
+
+	.rodape-parte-links
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		text-align: center;
+
+	}
+
+
+
+	.rodape-parte-contato
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100%;
+
+		height: auto;
+
+		padding-bottom: 50px;
+
+	}
+
+
+
+	.logo-rodape
+
+	{
+
+		display: block;
+
+		margin: auto;
+
+	}
+
+
+
+	.rodape-parte-institucional p
+
+	{
+
+		text-align: justify;
+
+		padding-left: 50px;
+
+		padding-right: 50px;
+
+	}
+
+
+
+	.conheca-a-vf-link 
+
+	{
+
+	    display: block;
+
+	    margin: auto;
+
+	    margin-top: 40px;
+
+	}
+
+
+
+	.rodape-parte-links h3
+
+	{
+
+		display: block;
+
+		text-align: center;
+
+		margin-top: 80px;
+
+		font-size: 24px;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.rodape-parte-links ul
+
+	{
+
+		display: block;
+
+		margin: auto;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.rodape-parte-links table
+
+	{
+
+		display: block;
+
+		margin: auto;
+
+		width: 230px;
+
+	}
+
+
+
+	.rodape-parte-contato h3
+
+	{
+
+		display: block;
+
+		text-align: center;
+
+		margin-top: 80px;
+
+		font-size: 24px;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.rodape-parte-contato p
+
+	{
+
+		text-align: center;
+
+		padding-left: 0;
+
+	}
+
+
+
+	.como-chegar-link
+
+	{
+
+		margin: auto;
+
+	}
+
+
+
+
+
+	.quadrado_beneficios_grande p
+
+	{
+
+		margin-left: 20px;
+
+	}
+
+
+
+	.quadrado_beneficios_medio 
+
+	{
+
+		 padding: 0px;
+
+	}
+
+
+
+	.quadrado_beneficios_grande
+
+	{
+
+		padding: 0px;
+
+	}
+
+
+
+	.icone_pessoa_beneficio
+
+	{
+
+		width: 90px;
+
+	}
+
+	.icone_diploma_beneficio
+
+	{
+
+		width: 90px;
+
+	} 
+
+
+
+	.icone_olho_beneficio
+
+	{
+
+		width: 110px;
+
+	} 
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 992px) 
+
+{
+
+	.quadrado_beneficios_grande
+
+	{
+
+		max-width: none;
+
+		display: block; 
+
+    	margin: auto;
+
+    	text-align: center;
+
+    	padding-top: 30px;
+
+	}
+
+
+
+	#tamanho_personalizado
+
+	{
+
+		max-width: none;
+
+		display: block; 
+
+    	margin: auto;
+
+    	text-align: center;
+
+    	padding-top: 30px;
+
+	}
+
+
+
+	.quadrado_beneficios_grande p {
+
+		margin: auto;
+
+		padding-bottom: 20px;
+
+	}
+
+
+
+	.quadrado_beneficios_medio 
+
+	{
+
+		max-width: none;
+
+		display: block;
+
+	}
+
+
+
+	.quadrado_beneficios_pequeno 
+
+	{
+
+		max-width: none;
+
+		display: block;
+
+	}
+
+
+
+	.icone_seta_beneficio
+
+	{
+
+		max-width: none;
+
+		display: inline-block;
+
+	}
+
+
+
+
+
+	.titulo_principal_beneficio
+
+	{
+
+		font-size: 19px;
+
+	}
+
+
+
+
+
+	.icone_pessoa_beneficio
+
+	{
+
+		width: 120px;
+
+	}
+
+
+
+	.icone_seta_beneficio
+
+	{
+
+		width: 40px;
+
+	}
+
+
+
+
+
+	.icone_grupo_pessoas_beneficio
+
+	{
+
+		width: 130px;
+
+	} 
+
+
+
+	.icone_diploma_beneficio
+
+	{
+
+		width: 120px;
+
+	} 
+
+
+
+	.icone_formado_beneficio
+
+	{
+
+		width: 110px;
+
+	}   
+
+
+
+
+
+	.icone_grafico_beneficio
+
+	{
+
+		width: 130px;
+
+	} 
+
+
+
+
+
+	.icone_grafico_duplo_beneficio
+
+	{
+
+		 width: 170px;
+
+	} 
+
+
+
+
+
+	.icone_olho_beneficio
+
+	{
+
+		width: 125px;
+
+	} 
+
+
+
+
+
+	.icone_olho_lupa_beneficio
+
+	{
+
+		width: 145px;
+
+	} 
+
+
+
+
+
+	.texto_beneficio 
+
+	{
+
+    	font-size: 16px;
+
+	}
+
+
+
+	.titulo_beneficio 
+
+	{
+
+    	font-size: 20px;
+
+    	padding-left: 20px;
+
+   		 padding-right: 20px;
+
+   		 box-sizing: border-box;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 768px) 
+
+{
+
+	.banner  h1
+
+	{
+
+		font-size: 40px;
+
+		box-sizing: border-box;
+
+		/*padding: 50px;*/
+
+		padding-bottom: 0;
+
+		padding-top: 150px;
+
+	}
+
+
+
+	.banner h2
+
+	{
+
+		font-size: 24px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 20px;
+
+	}
+
+
+
+	.banner-descricao
+
+	{
+
+		font-size: 16px;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+		padding-bottom: 0;
+
+		padding-top: 20px;
+
+	}
+
+
+
+
+
+	.contato-icone
+
+	{
+
+		float: none;
+
+		display: block;
+
+		margin: auto;
+
+	}
+
+
+
+	.contato-texto-icone
+
+	{
+
+		float: none;
+
+		display: block;
+
+		margin: auto;
+
+		text-align: center;
+
+		padding-top: 0;
+
+	}
+
+
+
+	.contato-texto
+
+	{
+
+		width: 100%;
+
+		max-width: 100%;
+
+		box-sizing: border-box;
+
+		padding: 50px;
+
+	}
+
+
+
+	.contato-link
+
+	{
+
+		margin: auto;
+
+	}
+
+
+
+	.divisoria
+
+	{
+
+		padding-top: 30px;
+
+	}
+
+
+
+	.cartao-texto 
+
+	{
+
+	    font-size: 16px;
+
+	}
+
+
+
+	.botao_arredondado_verde 
+
+	{
+
+		/*max-width: 295px;*/
+
+		font-size: 14px
+
+	}
+
+
+
+	.imagem-responsiva
+
+	{
+
+		width: 100px;
+
+	}
+
+
+
+
+
+	.beneficio h1
+
+	{
+
+		font-size: 17px;
+
+	}
+
+
+
+	#margem_extra
+
+	{
+
+		margin-bottom: 20px;
+
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) 
+
+{
+
+	.rodape-escuro
+
+	{
+
+		text-align: center;
+
+	}
+
+
+
+	.rodape-escuro span
+
+	{
+
+		float: none;
+
+		display: block;
+
+		padding-right: 20px;
+
+	}
+
+
+
+	.rodape-escuro a
+
+	{
+
+		float: none;
+
+		display: block;
+
+		padding-bottom: 20px;
+
+		padding-right: 0;
+
+	}
+
+
+
+
+
+	.banner-icone
+
+	{
+
+		float: none;
+
+		display: block;
+
+		width: 100px;
+
+		margin: auto;
+
+	}
+
+
+
+	.cartao-texto
+
+	{
+
+		width: 100%;
+
+		max-width: none;
+
+	}
+
+
+
+	.banner-icone-texto
+
+	{
+
+		padding-top: 20px;
+
+	}
+
+
+
+	.banner-icone-texto
+
+	{
+
+		width: 100%;
+
+	}
+
+
+
+
+
+	.cartao-texto > p
+
+	{
+
+		display: block;
+
+		float: none;
+
+		text-align: center;
+
+		max-width: none;
+
+		margin-top: 10px;
+
+	}
+
+
+
+	.botao_arredondado_verde
+
+	{
+
+		max-width: none;
+
+		width: 300px;
+
+   		margin: auto;
+
+   		margin-top: 20px;
+
+	}
+
+
+
+
+
+	.titulo_principal_beneficio
+
+	{
+
+		font-size: 16px;
+
+	}
+
+
+
+	.texto_beneficio
+
+	{
+
+		padding-left: 20px;
+
+    	padding-right: 20px;
+
+    	box-sizing: border-box
+
+	}
+
+
+
+	.titulo_beneficio
+
+	{
+
+		margin-bottom: 10px!important;
+
+	}
+
+
+
+	.banner  h1 
+
+	{
+
+    	padding-top: 90px;
+
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 414px) 
+
+{
+
+
+
+	.banner  h1
+
+	{
+
+		 padding-top: 80px;
+
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 375px) 
+
+{
+
+	
+
+	
+
+
+
+	.botao_arredondado_verde
+
+	{
+
+		width: 200px;
+
+   		margin: auto;
+
+   		margin-top: 10px;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 360px) 
+
+{
+
+	
+
+	.texto_beneficio 
+
+	{
+
+   		 font-size: 15px!important;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 320px) 
+
+{
+
+	.banner-icone-texto
+
+	{
+
+		width: 320px;
+
+	}
+
+
+
+	.banner-texto
+
+	{
+
+		width: 140px;
+
+		font-size: 12px;
+
+	}
+
+
+
+	.cartao-texto
+
+	{
+
+		font-size: 15px;
+
+	}
+
+
+
+
+
+	.banner  h1 
+
+	{
+
+		font-size: 35px;
+
+	}
+
+
+
+	.beneficio h1 
+
+	{
+
+   		 margin-top: 45px;
+
+	}
+
+
+
+	.imagem-responsiva 
+
+	{
+
+    	width: 90px;
+
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 280px) 
+
+{
+
+	.banner  h1 
+
+	{
+
+	    font-size: 26px;
+
+	    margin-top: 0;
+
+	    box-sizing: border-box;
+
+	}
+
+
+
+	.banner h2 
+
+	{
+
+	    font-size: 20px;
+
+	    box-sizing: border-box;
+
+	}
+
+
+
+	.banner-descricao 
+
+	{
+
+	    font-size: 14px;
+
+	    box-sizing: border-box;
+
+	}
+
+
+
+	.banner-icone-texto 
+
+	{
+
+   		 width: 264px;
+
+	}
+
+
+
+	.titulo_principal_beneficio 
+
+	{
+
+	    font-size: 14px;
+
+	    margin-top: 0px;
+
+	}
+
+
+
+	.logo
+
+	{
+
+		width: 150px;
+
+	}
+
+
+
+}
+
+
+
